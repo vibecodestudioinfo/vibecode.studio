@@ -1,0 +1,7 @@
+.env
+env.js
+node_modules/
+.DS_Store
+.vscode
+.hintrc
+.vercel
