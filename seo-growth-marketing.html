@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO & Growth Marketing for Startups | Vibecode Studio</title>
+  <meta name="description"
+    content="Data-driven SEO and growth marketing services for startups. Drive organic traffic, improve rankings, and scale your user acquisition efficiently." />
+  <meta name="keywords"
+    content="seo agency for startups, b2b saas seo, growth marketing agency, startup user acquisition, organic growth strategies" />
+  <meta name="author" content="vibecode.studio" />
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Geo Tags for Local SEO -->
+  <meta name="geo.region" content="IN-KA" />
+  <meta name="geo.placename" content="Mysore" />
+  <meta name="geo.position" content="12.2958;76.6394" />
+  <meta name="ICBM" content="12.2958, 76.6394" />
+
+  <link rel="canonical" href="https://vibecodestudio.in/seo-growth-marketing.html" />
+  <link rel="alternate" hreflang="en" href="https://vibecodestudio.in/seo-growth-marketing.html" />
+  <link rel="alternate" hreflang="x-default" href="https://vibecodestudio.in/seo-growth-marketing.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vibecodestudio.in/seo-growth-marketing.html" />
+  <meta property="og:title" content="SEO & Growth Marketing for Startups | Vibecode Studio" />
+  <meta property="og:description"
+    content="Data-driven SEO and growth marketing services for startups. Drive organic traffic, improve rankings, and scale your user acquisition efficiently." />
+  <meta property="og:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://vibecodestudio.in/seo-growth-marketing.html" />
+  <meta name="twitter:title" content="SEO & Growth Marketing for Startups | Vibecode Studio" />
+  <meta name="twitter:description"
+    content="Data-driven SEO and growth marketing services for startups. Drive organic traffic, improve rankings, and scale your user acquisition efficiently." />
+  <meta name="twitter:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <script type="application/ld+json">
+    {
+      "@type": "Service",
+      "serviceType": "SEO & Growth Marketing",
+      "areaServed": "Worldwide"
+    }
+  </script>
+
+  <script>
+    if (sessionStorage.getItem("loaderSeen")) {
+      document.documentElement.classList.add("skip-loader");
+    }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="logo.PNG">
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="shortcut icon" href="favicon.ico?v=2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+
+  <style>
+    /* Additional styles for consistency */
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      color: var(--txt);
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--cyan);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 1.8rem;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .faq-item:hover {
+      border-color: var(--cyan);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transform: translateY(-2px);
+    }
+
+    .faq-question {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--txt);
+    }
+
+    .faq-answer {
+      margin-top: 1rem;
+      padding-left: 2.5rem;
+      color: var(--txt-sm);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-icon {
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mobile-nav {
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-nav.active {
+      transform: translateX(0);
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO & Growth Marketing for Startups",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "vibecode.studio",
+      "image": "https://vibecodestudio.in/logo.PNG"
+    },
+    "description": "Data-driven SEO and growth marketing services for startups. Drive organic traffic, improve rankings, and scale your user acquisition efficiently."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img src="logo.PNG" class="loader-logo" id="loaderLogo" alt="logo" />
+      <div class="loader-text"><span id="typingText"></span><span class="cursor-blink">|</span></div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+      <img src="logo.PNG" alt="logo" style="height:22px; width:auto;">
+      vibecode<span>.studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#portfolio">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Start a Project →</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" onclick="toggleMobileNav()">✕</span>
+    <a href="index.html#services" onclick="toggleMobileNav()">Services</a>
+    <a href="index.html#portfolio" onclick="toggleMobileNav()">Work</a>
+    <a href="index.html#about" onclick="toggleMobileNav()">About</a>
+    <a href="index.html#testimonials" onclick="toggleMobileNav()">Reviews</a>
+    <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg-blob"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <div class="hero-tag-dot"></div>
+        Data-Driven Growth
+      </div>
+      <h1 class="hero-title reveal" style="transition-delay: 0.1s;">
+        SEO & Growth Marketing <br><span class="accent">for Startups</span>
+      </h1>
+      <p class="hero-sub reveal" style="transition-delay: 0.2s;">
+        Stop relying purely on expensive ads. We build sustainable, high-ROI organic growth engines that acquire target
+        users consistently month over month. Our clients see an average 3-5x ROI within the first year.
+      </p>
+      <div class="hero-cta reveal" style="transition-delay: 0.3s; display: flex; gap: 1rem; align-items: center;">
+        <a href="#contact" class="btn-primary" style="display: flex; align-items: center; gap: 8px;">
+          Scale Your Organic Traffic <i data-lucide="trending-up" style="width: 18px; height: 18px;"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal"
+      style="transition-delay: 0.4s; display: flex; justify-content: center; align-items: center;">
+      <div class="iso-wrapper">
+        <div class="iso-container" style="width: 300px; height: 260px;">
+          <!-- Base Dashboard Layer -->
+          <div class="iso-layer"
+            style="transform: translateZ(0px); background: #ffffff; border: 1.5px solid var(--txt); border-radius: 16px; box-shadow: -10px 10px 0px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
+            <!-- Header -->
+            <div
+              style="height: 48px; border-bottom: 1.5px solid var(--txt); display: flex; align-items: center; justify-content: space-between; padding: 0 16px;">
+              <div style="display: flex; gap: 8px; align-items: center;">
+                <i data-lucide="bar-chart-2" style="width: 18px; height: 18px; color: var(--txt);"></i>
+                <div style="width: 60px; height: 6px; background: var(--txt); border-radius: 3px;"></div>
+              </div>
+              <div style="width: 30px; height: 6px; background: rgba(0,0,0,0.1); border-radius: 3px;"></div>
+            </div>
+            <!-- Main Graph Grid Background -->
+            <div
+              style="flex: 1; padding: 20px; background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px); background-size: 20px 20px; position: relative;">
+              <!-- Decorative Bar Chart -->
+              <div
+                style="position: absolute; bottom: 20px; left: 15%; width: 10%; height: 30%; background: rgba(0,0,0,0.05); border: 1.5px solid var(--txt); border-radius: 4px 4px 0 0;">
+              </div>
+              <div
+                style="position: absolute; bottom: 20px; left: 35%; width: 10%; height: 50%; background: var(--txt); border-radius: 4px 4px 0 0;">
+              </div>
+              <div
+                style="position: absolute; bottom: 20px; left: 55%; width: 10%; height: 40%; background: rgba(0,0,0,0.05); border: 1.5px solid var(--txt); border-radius: 4px 4px 0 0;">
+              </div>
+              <div
+                style="position: absolute; bottom: 20px; left: 75%; width: 10%; height: 75%; background: #a7f3d0; border: 1.5px solid var(--txt); border-radius: 4px 4px 0 0;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Metric Card -->
+          <div class="iso-element"
+            style="width: 140px; top: 180px; left: -40px; transform: translateZ(60px); background: #fff; border: 1.5px solid var(--txt); border-radius: 12px; padding: 14px; display: flex; align-items: center; justify-content: space-between; box-shadow: -8px 8px 0px rgba(0,0,0,0.03);">
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <div
+                style="font-family: 'Inter', sans-serif; font-size: 0.65rem; font-weight: 700; color: rgba(0,0,0,0.5); text-transform: uppercase;">
+                Traffic</div>
+              <div style="font-family: 'DM Mono', monospace; font-size: 1rem; font-weight: 700; color: var(--txt);">
+                42.8k</div>
+            </div>
+            <div
+              style="width: 32px; height: 32px; background: #a7f3d0; border: 1.5px solid var(--txt); border-radius: 8px; display: flex; justify-content: center; align-items: center;">
+              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px; color: var(--txt);"></i>
+            </div>
+          </div>
+
+          <!-- Floating Info Tag -->
+          <div class="iso-element"
+            style="padding: 8px 16px; top: 60px; right: -30px; transform: translateZ(80px); background: #fff; color: var(--txt); border: 1.5px solid var(--txt); border-radius: 20px; font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; box-shadow: -4px 4px 0px rgba(0,0,0,0.05); display: flex; align-items: center; gap: 8px;">
+            <div style="width: 8px; height: 8px; background: #4ade80; border-radius: 50%;"></div>
+            +150% Conv. Rate
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED CONTENT SECTION ── -->
+  <section id="content" style="padding: 5rem 5%;">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Our Growth Methodology</div>
+      <h2 class="section-title reveal">Driving Predictable, Scalable Organic Traffic</h2>
+      <p style="color: var(--txt-sm); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;" class="reveal">
+        For startups, acquiring customers profitably is the hardest challenge. Paid acquisition is great for validation,
+        but terrible for long-term margins. Our SEO and growth marketing frameworks are designed to build a moat around
+        your brand, capturing high-intent search traffic and turning your website into a revenue-generating asset rather
+        than just an online brochure. We've helped 40+ startups achieve 3x organic growth within 6-9 months.
+      </p>
+
+      <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1.5rem;" class="reveal">Our Growth Flywheel</h3>
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="wrench" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Technical SEO
+            Audits</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">We fix canonicals, site speed, schema
+            markup, crawlability issues, and deeply integrate technical health optimizations for maximum search
+            visibility.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="file-text" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Content Strategy &
+            B2B SEO</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Identifying low-difficulty, high-intent
+            long-tail keywords your competitors are missing, and creating content that converts visitors into leads.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="mouse-pointer-click" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Conversion Rate
+            Optimization (CRO)</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Getting traffic is step one; we
+            rigorously A/B test funnels, landing pages, and CTAs to maximize signup conversions and user activation
+            rates.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="code" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Programmatic SEO
+            (pSEO)</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Launching thousands of dynamically
+            generated landing pages to capture granular localized or feature-based search volume at scale.</p>
+        </div>
+      </div>
+
+      <div class="reveal"
+        style="background: linear-gradient(135deg, rgba(15,108,255,0.05), rgba(15,108,255,0.02)); border-radius: 24px; padding: 2rem; margin: 2rem 0;">
+        <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Acquisition Designed for the Long Game
+        </h3>
+        <p style="color: var(--txt-sm); font-size: 1.05rem; line-height: 1.8;">
+          Growth marketing is not a simple checklist. We blend data science, deeply technical web development, and
+          behavioral psychology to outrank legacy competitors on Google. Our goal is simple: lower your Customer
+          Acquisition Cost (CAC) exponentially over time while building sustainable, defensible organic traffic channels
+          that continue to deliver leads for years to come.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED FAQ SECTION (Accordion Style) ── -->
+  <section id="faq" style="padding: 5rem 5%; background: var(--gray-lt);">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Knowledge Base</div>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="reveal" style="color: var(--txt-sm); margin-bottom: 2rem; font-size: 1rem;">Everything you need to know
+        about our growth marketing services. Can't find the answer? <a href="#contact"
+          style="color: var(--cyan);">Contact our team →</a></p>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="clock" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>How long does it take to see results from SEO?</span>
+        </div>
+        <div class="faq-answer">
+          SEO is a leading indicator game. Generally, you will see keyword traction and initial ranking improvements
+          within 2-3 months, with significant compounding lead volume starting around the 6-month mark. It is a
+          long-term investment that yields the highest ROI of any channel. We provide monthly reporting so you can track
+          progress every step of the way.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="building-2" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Can you help with B2B SaaS SEO specifically?</span>
+        </div>
+        <div class="faq-answer">
+          Yes. B2B SaaS relies heavily on lower-volume, hyper-targeted search queries (e.g., "alternatives to
+          [Competitor]" or "[Use Case] software"). We specialize in mapping content to the exact stages of the
+          enterprise buyer's journey—from awareness to consideration to decision—helping you capture qualified leads
+          ready to convert.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="bot" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you use AI for content generation?</span>
+        </div>
+        <div class="faq-answer">
+          We securely use AI for data clustering, outline generation, and programmatic structures. However, core
+          editorial content is always reviewed and infused with human, expert-level insight to ensure it meets Google's
+          strict E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) guidelines. We believe AI is a
+          tool, not a replacement for genuine expertise.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="chart-line" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>What metrics do you track and report on?</span>
+        </div>
+        <div class="faq-answer">
+          We provide comprehensive monthly reports covering organic traffic growth, keyword rankings (top 3, top 10, top
+          20), click-through rates, conversion rates, backlink acquisition, and most importantly—leads generated and
+          customer acquisition cost. We focus on metrics that directly impact your bottom line, not vanity metrics.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="link" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you offer link building services?</span>
+        </div>
+        <div class="faq-answer">
+          Yes, we offer white-hat link building through digital PR, guest posting on reputable industry publications,
+          resource page outreach, and broken link building. We never buy links or participate in spammy practices that
+          could harm your domain authority. Quality over quantity is our approach to building a strong backlink profile.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="globe" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you work with local businesses or only SaaS startups?</span>
+        </div>
+        <div class="faq-answer">
+          While our specialty is B2B SaaS and tech startups, we also work with local businesses looking to dominate
+          their geographic market. Our local SEO services include Google Business Profile optimization, local citation
+          building, and hyper-local content strategies to help you appear in the map pack and capture customers in your
+          area.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label reveal">Get In Touch</div>
+        <h2 class="section-title reveal">Let's Build Something Great.</h2>
+        <p class="reveal" style="font-size:.9rem;color:var(--txt-sm);line-height:1.75;margin-bottom:2rem;">Tell us about
+          your project and we'll get back to you within 24 hours with a free consultation and rough estimate.</p>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">📧</div>
+          <div>
+            <strong>Email Us</strong>
+            <span>info@vibecodestudio.in</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.1s">
+          <div class="contact-item-icon">📱</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <span>+91 82176 79297</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.2s">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <strong>Location</strong>
+            <span>Serving India & Globally</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal" style="transition-delay:.15s">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="contactName" placeholder="your name" />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="contactEmail" placeholder="email id" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="contactPhone" placeholder="phone number" />
+          </div>
+          <div class="form-group">
+            <label>Service Needed *</label>
+            <select id="contactService">
+              <option value="">Select a service…</option>
+              <option>Web Development</option>
+              <option>Mobile App</option>
+              <option>UI/UX Design</option>
+              <option value="SEO & Growth" selected>SEO & Growth</option>
+              <option>Automation System</option>
+              <option>AI Chatbot</option>
+              <option>Custom Service</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Budget Range</label>
+          <select id="contactBudget">
+            <option value="">Select budget…</option>
+            <option>Under ₹25,000</option>
+            <option>₹25,000 – ₹75,000</option>
+            <option>₹75,000 – ₹1,50,000</option>
+            <option>₹1,50,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tell us about your project *</label>
+          <textarea id="contactDescription"
+            placeholder="Describe your idea, goals, timeline, and anything else you'd like us to know…"></textarea>
+        </div>
+        <button class="form-submit" id="contactSubmitBtn" onclick="handleSubmit(this)">
+          Send Message →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-card">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">vibecode<span>.studio</span></div>
+          <p>
+            vibecode helps founders build modern websites,
+            apps, and digital products that scale.
+          </p>
+          <div class="footer-socials">
+            <a href="https://x.com/vibecodestudi0" aria-label="Follow us on X">𝕏</a>
+            <a href="https://www.instagram.com/vibecode.studio/" aria-label="Follow us on Instagram">ig</a>
+            <a href="#" aria-label="Follow us on Facebook">fb</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="web-development.html">Web Development</a>
+          <a href="mobile-app-development.html">Mobile Apps</a>
+          <a href="ui-ux-design.html">UI/UX Design</a>
+          <a href="seo-growth-marketing.html">SEO & Growth</a>
+          <a href="automation-systems.html">Automation System</a>
+          <a href="ai-chatbot-development.html">AI Chatbot</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="index.html#about">About</a>
+          <a href="index.html#portfolio">Work</a>
+          <a href="index.html#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <a href="mailto:info@vibecodestudio.in">info@vibecodestudio.in</a>
+            <a href="https://wa.me/918217679297" target="_blank" rel="noopener noreferrer">+91 82176 79297</a>
+            <a href="#">Mysore, India</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 vibecode.studio. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bg-text">vibecode</div>
+  </footer>
+
+  <!-- ── 3D Robot Mascot & Chatbot ── -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-title">vibe<span>bot</span></div>
+        <button class="chatbot-close" id="chatbotClose">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="message bot-message" id="chatbotWelcomeMsg">Hi there! 👋 I'm Vibebot, your professional assistant.
+          How can I help you today?</div>
+      </div>
+
+      <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+        <button class="quick-reply-btn">What are your services?</button>
+        <button class="quick-reply-btn">How much is a website?</button>
+        <button class="quick-reply-btn">Contact Sales</button>
+      </div>
+
+      <div class="chatbot-input-area">
+        <input type="text" id="chatbotInput" placeholder="Type your message...">
+        <button id="chatbotSend"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <div class="chatbot-icon" id="chatbotIcon">
+      <model-viewer src="robot.glb" camera-controls disable-zoom disable-pan shadow-intensity="1"
+        environment-image="neutral" interaction-prompt="none" style="width: 100%; height: 100%; cursor: pointer;">
+      </model-viewer>
+    </div>
+  </div>
+
+  <script type="module" src="robot.js"></script>
+  <script src="script.js" defer></script>
+
+  <script>
+    lucide.createIcons();
+
+    // FAQ toggle function
+    function toggleFaq(element) {
+      element.classList.toggle('active');
+    }
+
+    // Mobile nav toggle
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobileNav');
+      if (mobileNav) {
+        mobileNav.classList.toggle('active');
+      }
+    }
+
+    // Form submit handler
+    function handleSubmit(btn) {
+      alert('Thank you for reaching out! Our team will get back to you within 24 hours.');
+    }
+
+    // Reveal animations on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < windowHeight - 100) {
+          el.classList.add('revealed');
+        }
+      });
+    }
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', () => {
+      checkReveal();
+      lucide.createIcons();
+    });
+    checkReveal();
+  </script>
+
+</body>
+
+</html>

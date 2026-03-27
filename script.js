@@ -268,8 +268,8 @@ document.querySelectorAll(".portfolio-card").forEach(card => {
 document.addEventListener("keydown", function (e) {
 
   if (
-    e.ctrlKey && ["c", "x", "u", "s", "a"].includes(e.key.toLowerCase())
-    // e.key === "F12"
+    e.ctrlKey && ["c", "x", "u", "s", "a"].includes(e.key.toLowerCase()) ||
+    e.key === "F12"
   ) {
     e.preventDefault();
   }

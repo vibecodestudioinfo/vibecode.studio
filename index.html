@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>vibecode.studio | Web & App Development For Startups</title>
+  <title>Web Development Company for Startups | AI, SaaS & App Development - Vibecode Studio</title>
   <meta name="description"
-    content="vibecode.studio is a digital agency crafting websites, mobile apps, UI/UX design, and AI automation systems for ambitious founders." />
+    content="Vibecode Studio is a global web development company helping startups build websites, mobile apps, SaaS platforms, and AI solutions. Work with expert developers worldwide." />
   <meta name="keywords"
     content="web development agency, startup MVP development, mobile app developers, UI/UX design studio, AI chatbot development company, custom software development, hire React developers, Next.js agency, SaaS development, digital agency India, Mysore web development, global tech agency, automation systems for business, tech partner for founders, SEO, growth marketing" />
   <meta name="author" content="vibecode.studio" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Geo Tags for Local SEO -->
-  <meta name="geo.region" content="IN-KA" />
-  <meta name="geo.placename" content="Mysore" />
-  <meta name="geo.position" content="12.2958;76.6394" />
-  <meta name="ICBM" content="12.2958, 76.6394" />
+  <link rel="alternate" hreflang="en" href="https://vibecodestudio.in/" />
+  <link rel="alternate" hreflang="x-default" href="https://vibecodestudio.in/" />
+
 
   <link rel="canonical" href="https://vibecodestudio.in/" />
 
@@ -26,6 +26,8 @@
   <meta property="og:description"
     content="A full-service digital agency building scalable websites, apps, and autonomous systems." />
   <meta property="og:image" content="https://vibecodestudio.in/logo.PNG" />
+  <meta property="og:site_name" content="vibecode.studio">
+  <meta property="og:locale" content="en_IN">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -34,6 +36,7 @@
   <meta name="twitter:description"
     content="A full-service digital agency building scalable websites, apps, and autonomous systems." />
   <meta name="twitter:image" content="https://vibecodestudio.in/logo.PNG" />
+  <meta name="robots" content="index, follow" />
 
   <script>
     if (sessionStorage.getItem("loaderSeen")) {
@@ -59,21 +62,27 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "vibecode.studio",
-    "image": "https://vibecodestudio.in/logo.PNG",
-    "description": "A full-service digital agency building scalable websites, apps, and autonomous systems for fast-growing startups.",
-    "url": "https://vibecodestudio.in",
-    "telephone": "+918217679297",
-    "email": "info@vibecodestudio.in",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mysore",
-      "addressCountry": "IN"
-    },
-    "priceRange": "$$"
-  }
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "vibecode.studio",
+ "url": "https://vibecodestudio.in",
+ "logo": "https://vibecodestudio.in/logo.PNG",
+ "image": "https://vibecodestudio.in/logo.PNG",
+ "telephone": "+918217679297",
+ "email": "info@vibecodestudio.in",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Mysore",
+   "addressRegion": "Karnataka",
+   "addressCountry": "IN"
+ },
+ "areaServed": ["India", "Worldwide"],
+ "sameAs": [
+   "https://linkedin.com/...",
+   "https://twitter.com/...",
+   "https://instagram.com/..."
+ ]
+}
   </script>
 </head>
 
@@ -83,7 +92,7 @@
   <div class="loader" id="loader">
 
     <div class="loader-inner">
-      <img src="logo.PNG" class="loader-logo" id="loaderLogo" alt="logo" />
+      <img src="logo.PNG" class="loader-logo" id="loaderLogo" alt="Vibecode Studio AI Development Company" />
 
       <div class="loader-text">
         <span id="typingText"></span><span class="cursor-blink">|</span>
@@ -99,7 +108,7 @@
   <nav id="navbar">
 
     <a href="#hero" class="nav-logo" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
-      <img src="logo.PNG" alt="logo" style="height:22px; width:auto;">
+      <img src="logo.PNG" alt="Vibecode Studio AI Development Company" style="height:22px; width:auto;">
       vibecode<span>.studio</span>
     </a>
 
@@ -143,9 +152,13 @@
         <span class="accent"> Imagine.</span>
       </h1>
       <p class="hero-sub">
-        vibecode.studio is a full-service digital agency — crafting websites, apps, and digital growth systems for
-        ambitious startups.
+        vibecode.studio is a full-service digital agency — crafting scalable websites, mobile apps, SaaS platforms, and
+        AI solutions for
+        ambitious startups and growing businesses worldwide.
       </p>
+      <h2 style="font-size:1rem; margin-top:10px; margin-bottom:10px; color:var(--accent);" class="hero-seo-heading">
+        Web Development, SaaS & AI Solutions for Startups Worldwide
+      </h2>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">Start Your Project →</a>
         <a href="#portfolio" class="btn-outline">See Our Work</a>
@@ -235,46 +248,54 @@
     <div class="services-grid">
 
       <!-- WEB -->
-      <div class="service-card reveal" style="transition-delay:.05s">
+      <a href="web-development.html" class="service-card reveal"
+        style="transition-delay:.05s; display:block; text-decoration:none; color:inherit;">
         <div class="service-icon"><i data-lucide="globe"></i></div>
         <div class="service-name">Web Development</div>
-        <div class="service-desc">Conversion-focused websites built for performance, scale, and growth.</div>
-      </div>
+        <div class="service-desc">
+          Custom web development services for startups and businesses, focused on performance, scalability, and SEO.
+        </div>
+      </a>
 
       <!-- MOBILE -->
-      <div class="service-card reveal" style="transition-delay:.1s">
+      <a href="mobile-app-development.html" class="service-card reveal"
+        style="transition-delay:.1s; display:block; text-decoration:none; color:inherit;">
         <div class="service-icon"><i data-lucide="smartphone"></i></div>
         <div class="service-name">Mobile App Development</div>
         <div class="service-desc">Scalable mobile apps designed for seamless user experience and performance.</div>
-      </div>
+      </a>
 
       <!-- UI UX -->
-      <div class="service-card reveal" style="transition-delay:.15s">
+      <a href="ui-ux-design.html" class="service-card reveal"
+        style="transition-delay:.15s; display:block; text-decoration:none; color:inherit;">
         <div class="service-icon"><i data-lucide="pen-tool"></i></div>
         <div class="service-name">UI/UX Design</div>
         <div class="service-desc">Conversion-driven design systems built to elevate product experience.</div>
-      </div>
+      </a>
 
       <!-- MARKETING -->
-      <div class="service-card reveal" style="transition-delay:.2s">
+      <a href="seo-growth-marketing.html" class="service-card reveal"
+        style="transition-delay:.2s; display:block; text-decoration:none; color:inherit;">
         <div class="service-icon"><i data-lucide="trending-up"></i></div>
         <div class="service-name">SEO & Growth Marketing</div>
         <div class="service-desc">Scalable acquisition systems designed to drive consistent growth.</div>
-      </div>
+      </a>
 
       <!-- AUTOMATION -->
-      <div class="service-card reveal" style="transition-delay:.25s">
+      <a href="automation-systems.html" class="service-card reveal"
+        style="transition-delay:.25s; display:block; text-decoration:none; color:inherit;">
         <div class="service-icon"><i data-lucide="settings"></i></div>
         <div class="service-name">Automation Systems</div>
         <div class="service-desc">Smart workflows and integrations that reduce manual work and scale operations.</div>
-      </div>
+      </a>
 
       <!-- AI -->
-      <div class="service-card reveal" style="transition-delay:.3s">
+      <a href="ai-chatbot-development.html" class="service-card reveal"
+        style="transition-delay:.3s; display:block; text-decoration:none; color:inherit;">
         <div class="service-icon"><i data-lucide="bot"></i></div>
         <div class="service-name">AI Chatbot Development</div>
         <div class="service-desc">Intelligent chatbots for customer support, lead generation, and automation.</div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -290,9 +311,12 @@
       <!-- 1️⃣ NWAKS WEBSITE -->
       <div class="portfolio-card reveal">
         <div class="portfolio-slider">
-          <img src="images/nwaks1.png" class="portfolio-img active" alt="nwaks">
-          <img src="images/nwaks2.png" class="portfolio-img" alt="nwaks">
-          <img src="images/nwaks3.png" class="portfolio-img" alt="nwaks">
+          <img src="images/nwaks1.png" class="portfolio-img active"
+            alt="NWAKS website development project by Vibecode Studio" loading="lazy">
+          <img src="images/nwaks2.png" class="portfolio-img" alt="NWAKS website development project by Vibecode Studio"
+            loading="lazy">
+          <img src="images/nwaks3.png" class="portfolio-img" alt="NWAKS website development project by Vibecode Studio"
+            loading="lazy">
         </div>
 
         <!-- ARROWS -->
@@ -307,7 +331,9 @@
             Cultural organization website with events & multilingual experience.
           </div>
           <a href="https://nwaks.org" target="_blank" class="portfolio-link">
-            <span style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Visit NWAKS</span>
+            <span
+              style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Visit
+              NWAKS</span>
             <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -317,9 +343,12 @@
       <!-- 2️⃣ LIVEGREEN APP -->
       <div class="portfolio-card reveal">
         <div class="portfolio-slider">
-          <img src="images/livegreen1.png" class="portfolio-img active" alt="LiveGreen mobile habit tracker app UI">
-          <img src="images/livegreen2.png" class="portfolio-img" alt="LiveGreen sustainability tracking features">
-          <img src="images/livegreen.png" class="portfolio-img" alt="LiveGreen mobile application dashboard">
+          <img src="images/livegreen1.png" class="portfolio-img active"
+            alt="LiveGreen mobile habit tracker app UI project by Vibecode Studio" loading="lazy">
+          <img src="images/livegreen2.png" class="portfolio-img"
+            alt="LiveGreen sustainability tracking features project by Vibecode Studio" loading="lazy">
+          <img src="images/livegreen.png" class="portfolio-img"
+            alt="LiveGreen mobile application dashboard project by Vibecode Studio" loading="lazy">
         </div>
 
         <!-- ARROWS -->
@@ -334,7 +363,9 @@
             Habit tracking & sustainability mobile app with analytics and reminders.
           </div>
           <a href="https://play.google.com/store/search?q=livegreen&c=apps" target="_blank" class="portfolio-link">
-            <span style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">View LiveGreen App</span>
+            <span
+              style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">View
+              LiveGreen App</span>
             <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -344,9 +375,12 @@
       <!-- 3️⃣ Shop-co  -->
       <div class="portfolio-card reveal">
         <div class="portfolio-slider">
-          <img src="images/shopco1.png" class="portfolio-img active" alt="Shop-co modern e-commerce website UI">
-          <img src="images/shopco2.png" class="portfolio-img" alt="Shop-co shopping cart design">
-          <img src="images/shopco3.png" class="portfolio-img" alt="Shop-co product checkout flow">
+          <img src="images/shopco1.png" class="portfolio-img active"
+            alt="Shop-co modern e-commerce website UI project by Vibecode Studio" loading="lazy">
+          <img src="images/shopco2.png" class="portfolio-img"
+            alt="Shop-co shopping cart design project by Vibecode Studio" loading="lazy">
+          <img src="images/shopco3.png" class="portfolio-img"
+            alt="Shop-co product checkout flow project by Vibecode Studio" loading="lazy">
         </div>
 
         <!-- ARROWS -->
@@ -362,7 +396,9 @@
           </div>
           <a href="https://www.figma.com/proto/DJvLjefvB02e3EshiUTboB/Shop-co?node-id=1-10&starting-point-node-id=1%3A10&t=jkxruvZgYboMBnao-1"
             target="_blank" class="portfolio-link">
-            <span style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">View Shop-co Design</span>
+            <span
+              style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">View
+              Shop-co Design</span>
             <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -372,9 +408,12 @@
       <!-- 4️⃣ MIO CHATBOT -->
       <div class="portfolio-card reveal">
         <div class="portfolio-slider">
-          <img src="images/mio1.png" class="portfolio-img active" alt="Mio AI Concierge Chatbot">
-          <img src="images/mio2.png" class="portfolio-img" alt="Mio local discovery app interface">
-          <img src="images/mio3.png" class="portfolio-img" alt="Mio smart assistant recommendations">
+          <img src="images/mio1.png" class="portfolio-img active"
+            alt="Mio AI Concierge Chatbot project by Vibecode Studio" loading="lazy">
+          <img src="images/mio2.png" class="portfolio-img"
+            alt="Mio local discovery app interface project by Vibecode Studio" loading="lazy">
+          <img src="images/mio3.png" class="portfolio-img"
+            alt="Mio smart assistant recommendations project by Vibecode Studio" loading="lazy">
         </div>
 
         <!-- ARROWS -->
@@ -389,7 +428,9 @@
             Smart assistant for local discovery, travel help & real-time suggestions.
           </div>
           <a href="https://mio0.netlify.app/" target="_blank" class="portfolio-link">
-            <span style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Try Mio Chatbot</span>
+            <span
+              style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Try
+              Mio Chatbot</span>
             <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -431,7 +472,7 @@
           <div class="about-location">
             <div class="about-location-icon">📍</div>
             <div>
-              <strong>Serving clients across India & Globally</strong>
+              <span>Serving clients across USA, UK, India, and Europe</span>
             </div>
           </div>
         </div>
@@ -443,7 +484,9 @@
   <section id="testimonials">
     <div class="reveal" style="text-align:center; margin-bottom: 0;">
       <div class="section-label" style="justify-content:center;">Client Feedback</div>
-      <h2 class="section-title">What Our Clients Say</h2>
+      <h2 class="section-title">
+        Client Reviews for Our Web & Software Development Services
+      </h2>
       <p class="section-sub" style="margin: 0 auto;">
         Honest feedback from organizations and teams we’ve partnered with.
       </p>
@@ -514,14 +557,18 @@
           <div class="contact-item-icon">📧</div>
           <div>
             <strong>Email Us</strong>
-            <span>info@vibecodestudio.in</span>
+            <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@vibecodestudio.in" target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration: none; color: var(--accent);">info@vibecodestudio.in</a></span>
           </div>
         </div>
         <div class="contact-item reveal" style="transition-delay:.1s">
           <div class="contact-item-icon">📱</div>
           <div>
             <strong>WhatsApp</strong>
-            <span>+91 82176 79297</span>
+            <span><a href="https://wa.me/918217679297" target="_blank" rel="noopener noreferrer"
+                style="text-decoration: none; color: var(--accent);">+91 82176
+                79297</a></span>
           </div>
         </div>
         <div class="contact-item reveal" style="transition-delay:.2s">
@@ -612,24 +659,16 @@
             <a href="#" aria-label="Follow us on Facebook">fb</a>
           </div>
 
-          <div style="margin-top: 1.5rem;">
-            <p style="font-size: 0.85rem; color: var(--txt-sm); margin-bottom: 0.5rem;">Share this page:</p>
-            <div class="footer-socials" style="gap: 12px;">
-              <a href="https://twitter.com/intent/tweet?url=https://vibecodestudio.in&text=Check%20out%20vibecode.studio" target="_blank" aria-label="Share on X" style="text-decoration: none;">𝕏</a>
-              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vibecodestudio.in" target="_blank" aria-label="Share on LinkedIn" style="text-decoration: none;">in</a>
-              <a href="mailto:?subject=Check out vibecode.studio&body=https://vibecodestudio.in" aria-label="Share via Email" style="text-decoration: none;">✉️</a>
-            </div>
-          </div>
         </div>
 
         <div class="footer-col">
           <h3>Services</h3>
-          <a href="#services">Web Development</a>
-          <a href="#services">Mobile Apps</a>
-          <a href="#services">UI/UX Design</a>
-          <a href="#services">SEO & Growth</a>
-          <a href="#services">Automation System</a>
-          <a href="#services">AI Chatbot</a>
+          <a href="web-development.html">Web Development</a>
+          <a href="mobile-app-development.html">Mobile Apps</a>
+          <a href="ui-ux-design.html">UI/UX Design</a>
+          <a href="seo-growth-marketing.html">SEO & Growth</a>
+          <a href="automation-systems.html">Automation System</a>
+          <a href="ai-chatbot-development.html">AI Chatbot</a>
         </div>
 
         <div class="footer-col">
@@ -643,8 +682,9 @@
         <div class="footer-col">
           <div class="footer-contact">
             <h3>Contact</h3>
-            <a href="#">info@vibecodestudio.in</a>
-            <a href="#">+91 82176 79297</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@vibecodestudio.in"
+              target="_blank">info@vibecodestudio.in</a>
+            <a href="https://wa.me/918217679297" target="_blank" rel="noopener noreferrer">+91 82176 79297</a>
             <a href="#">Mysore, India</a>
           </div>
         </div>
@@ -666,7 +706,7 @@
 
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <script>
     lucide.createIcons();
   </script>

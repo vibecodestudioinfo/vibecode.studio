@@ -27,6 +27,11 @@
   transform: translateY(-6px) scale(1.04);
 }
 
+/* Hide model-viewer default progress bar which appears as a line on load */
+model-viewer::part(default-progress-bar) {
+  display: none;
+}
+
 /* CHAT WINDOW */
 
 .chatbot-window {

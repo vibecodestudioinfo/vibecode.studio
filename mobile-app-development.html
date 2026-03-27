@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile App Development Company for Startups | Vibecode Studio</title>
+  <meta name="description"
+    content="End-to-end mobile app development services for iOS and Android. Build fast, scalable native and cross-platform mobile apps for your startup." />
+  <meta name="keywords"
+    content="mobile app development company, iOS app developers, Android developers, React Native agency for startups, custom app development services" />
+  <meta name="author" content="vibecode.studio" />
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Geo Tags for Local SEO -->
+  <meta name="geo.region" content="IN-KA" />
+  <meta name="geo.placename" content="Mysore" />
+  <meta name="geo.position" content="12.2958;76.6394" />
+  <meta name="ICBM" content="12.2958, 76.6394" />
+
+  <link rel="canonical" href="https://vibecodestudio.in/mobile-app-development.html" />
+  <link rel="alternate" hreflang="en" href="https://vibecodestudio.in/mobile-app-development.html" />
+  <link rel="alternate" hreflang="x-default" href="https://vibecodestudio.in/mobile-app-development.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vibecodestudio.in/mobile-app-development.html" />
+  <meta property="og:title" content="Mobile App Development for Startups | Vibecode Studio" />
+  <meta property="og:description"
+    content="End-to-end mobile app development for iOS and Android. Build fast, scalable native and cross-platform mobile apps." />
+  <meta property="og:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://vibecodestudio.in/mobile-app-development.html" />
+  <meta name="twitter:title" content="Mobile App Development for Startups | Vibecode Studio" />
+  <meta name="twitter:description"
+    content="End-to-end mobile app development for iOS and Android. Build fast, scalable native and cross-platform mobile apps." />
+  <meta name="twitter:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <script type="application/ld+json">
+    {
+      "@type": "Service",
+      "serviceType": "Mobile App Development",
+      "areaServed": "Worldwide"
+    }
+  </script>
+
+  <script>
+    if (sessionStorage.getItem("loaderSeen")) {
+      document.documentElement.classList.add("skip-loader");
+    }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="logo.PNG">
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="shortcut icon" href="favicon.ico?v=2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+
+  <style>
+    /* Additional styles for consistency */
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      color: var(--txt);
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--cyan);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 1.8rem;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .faq-item:hover {
+      border-color: var(--cyan);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transform: translateY(-2px);
+    }
+
+    .faq-question {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--txt);
+    }
+
+    .faq-answer {
+      margin-top: 1rem;
+      padding-left: 2.5rem;
+      color: var(--txt-sm);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-icon {
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mobile-nav {
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-nav.active {
+      transform: translateX(0);
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Mobile App Development for Startups",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "vibecode.studio",
+      "image": "https://vibecodestudio.in/logo.PNG"
+    },
+    "description": "End-to-end mobile app development services for iOS and Android. Build fast, scalable native and cross-platform mobile apps for your startup."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img src="logo.PNG" class="loader-logo" id="loaderLogo" alt="logo" />
+      <div class="loader-text"><span id="typingText"></span><span class="cursor-blink">|</span></div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+      <img src="logo.PNG" alt="logo" style="height:22px; width:auto;">
+      vibecode<span>.studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#portfolio">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Start a Project →</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" onclick="toggleMobileNav()">✕</span>
+    <a href="index.html#services" onclick="toggleMobileNav()">Services</a>
+    <a href="index.html#portfolio" onclick="toggleMobileNav()">Work</a>
+    <a href="index.html#about" onclick="toggleMobileNav()">About</a>
+    <a href="index.html#testimonials" onclick="toggleMobileNav()">Reviews</a>
+    <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg-blob"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <div class="hero-tag-dot"></div>
+        iOS & Android
+      </div>
+      <h1 class="hero-title reveal" style="transition-delay: 0.1s;">
+        Mobile App Development <br><span class="accent">for Startups</span>
+      </h1>
+      <p class="hero-sub reveal" style="transition-delay: 0.2s;">
+        Empower your users with world-class mobile experiences. We build high-performance, native-feel robust mobile
+        apps engineered for speed, scalability, and modern UX.
+      </p>
+      <div class="hero-cta reveal" style="transition-delay: 0.3s; display: flex; gap: 1rem; align-items: center;">
+        <a href="#contact" class="btn-primary" style="display: flex; align-items: center; gap: 8px;">
+          Build Your App Today <i data-lucide="smartphone" style="width: 18px; height: 18px;"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal"
+      style="transition-delay: 0.4s; display: flex; justify-content: center; align-items: center;">
+      <div class="iso-wrapper">
+        <div class="iso-container" style="width: 180px; height: 350px;">
+          <!-- Base Phone Wireframe -->
+          <div class="iso-layer"
+            style="transform: translateZ(0px); background: #ffffff; border: 1.5px solid var(--txt); border-radius: 32px; box-shadow: -10px 10px 0px rgba(0,0,0,0.03);">
+            <!-- Notch -->
+            <div
+              style="width: 40%; height: 20px; margin: 10px auto; background: rgba(0,0,0,0.05); border: 1.5px solid var(--txt); border-radius: 10px;">
+            </div>
+            <div style="padding: 15px; display: flex; flex-direction: column; gap: 14px;">
+              <!-- Skeleton content -->
+              <div
+                style="width: 100%; height: 100px; border: 1.5px solid var(--txt); border-radius: 12px; background: rgba(0,0,0,0.02);">
+              </div>
+              <div style="width: 80%; height: 6px; background: rgba(0,0,0,0.06); border-radius: 3px;"></div>
+              <div style="width: 60%; height: 6px; background: rgba(0,0,0,0.06); border-radius: 3px;"></div>
+              <div
+                style="width: 100%; height: 60px; border: 1.5px solid var(--txt); border-radius: 12px; background: rgba(0,0,0,0.02); margin-top: 10px;">
+              </div>
+            </div>
+            <!-- Bottom bar -->
+            <div
+              style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); width: 40%; height: 4px; background: var(--txt); border-radius: 2px;">
+            </div>
+          </div>
+
+          <!-- Floating Chat/Component (Oslo Chat vibes) -->
+          <div class="iso-element"
+            style="width: 170px; top: 120px; left: -60px; transform: translateZ(50px); background: #fff; border: 1.5px solid var(--txt); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px; box-shadow: -8px 8px 0px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 6px;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 700; color: var(--txt);">
+                Message</div>
+              <div
+                style="width: 24px; height: 12px; background: #a7f3d0; border: 1.5px solid var(--txt); border-radius: 6px;">
+              </div>
+            </div>
+            <div
+              style="align-self: flex-start; padding: 6px 10px; background: rgba(0,0,0,0.05); border-radius: 10px; border: 1.5px solid transparent;">
+              <div style="width: 30px; height: 4px; background: rgba(0,0,0,0.2); border-radius: 2px;"></div>
+            </div>
+            <div
+              style="align-self: flex-end; padding: 6px 10px; background: #a7f3d0; border-radius: 10px; border: 1.5px solid var(--txt);">
+              <div style="display: flex; gap: 4px;">
+                <div style="width: 14px; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+                <div style="width: 20px; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Action Button -->
+          <div class="iso-element"
+            style="width: 48px; height: 48px; bottom: 30px; right: -25px; transform: translateZ(70px); background: var(--txt); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: -6px 6px 0px rgba(0,0,0,0.05);">
+            <i data-lucide="plus" style="width: 24px; height: 24px; color: white;"></i>
+          </div>
+
+          <!-- Floating Notification -->
+          <div class="iso-element"
+            style="width: 120px; top: -10px; right: -40px; transform: translateZ(80px); background: #fff; border: 1.5px solid var(--txt); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; box-shadow: -6px 6px 0px rgba(0,0,0,0.03);">
+            <div
+              style="width: 12px; height: 12px; background: #a7f3d0; border: 1.5px solid var(--txt); border-radius: 50%;">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 4px; flex: 1;">
+              <div style="width: 80%; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+              <div style="width: 50%; height: 4px; background: rgba(0,0,0,0.2); border-radius: 2px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED CONTENT SECTION ── -->
+  <section id="content" style="padding: 5rem 5%;">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Our Expertise</div>
+      <h2 class="section-title reveal">High-Performance Mobile Applications</h2>
+      <p style="color: var(--txt-sm); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;" class="reveal">
+        In the mobile-first era, sluggish interfaces and complex navigation kill user retention. As a premier mobile app
+        development agency, we craft intuitive and performant iOS and Android applications. Leveraging frameworks like
+        React Native and native deployment practices, your app gets to market faster while feeling incredibly fluid.
+        We've helped over 40+ startups launch successful mobile apps with thousands of daily active users.
+      </p>
+
+      <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1.5rem;" class="reveal">Our Expertise</h3>
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="smartphone" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Cross-Platform
+            Development</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Utilizing React Native and Flutter to
+            launch on both platforms seamlessly with a single codebase, saving up to 40% development time.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="users" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Consumer Mobile
+            Apps</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Building engaging applications complete
+            with social feeds, real-time messaging, push notifications, and rich media experiences.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="briefcase" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">B2B Utility & SaaS
+            Apps</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Secure, data-driven applications aimed
+            at enterprise productivity, with role-based access and real-time synchronization.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="trending-up" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">App Store
+            Optimization (ASO)</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Ensuring your application ranks
+            effectively and acquires new users consistently with proven ASO strategies and keyword optimization.</p>
+        </div>
+      </div>
+
+      <div class="reveal"
+        style="background: linear-gradient(135deg, rgba(15,108,255,0.05), rgba(15,108,255,0.02)); border-radius: 24px; padding: 2rem; margin: 2rem 0;">
+        <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Turning App Ideas Into Rapid Reality</h3>
+        <p style="color: var(--txt-sm); font-size: 1.05rem; line-height: 1.8;">
+          Entrepreneurs rely on us not just for code, but for execution strategy. Our approach to mobile application
+          development integrates strict UX principles, ensuring that whether your users are on a 5-year-old Android
+          device
+          or the newest iPhone, your digital product feels flawless. We offer end-to-end services from product discovery
+          to App Store submission, with transparent pricing and weekly progress updates.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED FAQ SECTION (Accordion Style) ── -->
+  <section id="faq" style="padding: 5rem 5%; background: var(--gray-lt);">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Knowledge Base</div>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="reveal" style="color: var(--txt-sm); margin-bottom: 2rem; font-size: 1rem;">Everything you need to know
+        about mobile app development with us. Can't find the answer? <a href="#contact"
+          style="color: var(--cyan);">Contact our team →</a></p>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="help-circle" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Native vs. Cross-Platform: What should I choose?</span>
+        </div>
+        <div class="faq-answer">
+          For 95% of startups, cross-platform (using React Native or Flutter) is the optimal path. It radically reduces
+          time-to-market and development costs by 30-40% while delivering a near-native experience. If your app relies
+          heavily on proprietary hardware APIs, complex AR features, or requires absolute maximum performance, we will
+          guide you toward purely native development (Swift/Kotlin).
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="app-store" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you handle App Store and Google Play submissions?</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely! Dealing with Apple and Google review guidelines is notorious. Our end-to-end service encompasses
+          everything from certificates and provisioning profiles to final, approved deployment in the app stores. We
+          handle the entire submission process, including creating store listings, screenshots, and responding to review
+          feedback, ensuring a smooth launch.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="dollar-sign" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>How much does it cost to build a mobile app?</span>
+        </div>
+        <div class="faq-answer">
+          Costs vary depending on backend complexity, feature set, design requirements, and platform choice. Starter
+          MVPs typically range from ₹2,00,000 to ₹5,00,000 for cross-platform apps, while feature-rich consumer apps
+          with complex backend infrastructure can range from ₹6,00,000 to ₹15,00,000+. We provide a personalized,
+          transparent quote after understanding your specific requirements during a free consultation.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="clock" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>How long does it take to develop a mobile MVP?</span>
+        </div>
+        <div class="faq-answer">
+          A typical mobile MVP takes between 8 to 14 weeks depending on complexity and feature scope. For simple utility
+          apps with basic authentication and core functionality, we can deliver in 6-8 weeks. More complex apps with
+          social features, real-time sync, or marketplace functionality typically require 10-14 weeks. We focus on rapid
+          iteration to get your product in users' hands quickly.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="refresh-cw" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you provide post-launch maintenance and updates?</span>
+        </div>
+        <div class="faq-answer">
+          Yes! We offer flexible maintenance and support packages to ensure your app stays up-to-date with OS updates,
+          security patches, and new feature rollouts. Our post-launch services include bug fixes, performance
+          monitoring, analytics integration, and regular feature updates. We also provide emergency support for critical
+          issues with guaranteed response times.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="shield" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>How do you ensure app security and data protection?</span>
+        </div>
+        <div class="faq-answer">
+          Security is our top priority. We implement industry best practices including encrypted data storage, secure
+          API authentication (OAuth2, JWT), HTTPS/TLS encryption, and regular security audits. We also ensure compliance
+          with data protection regulations like GDPR and follow Apple and Google's security guidelines. All source code
+          and data remain your intellectual property.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label reveal">Get In Touch</div>
+        <h2 class="section-title reveal">Let's Build Something Great.</h2>
+        <p class="reveal" style="font-size:.9rem;color:var(--txt-sm);line-height:1.75;margin-bottom:2rem;">Tell us about
+          your project and we'll get back to you within 24 hours with a free consultation and rough estimate.</p>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">📧</div>
+          <div>
+            <strong>Email Us</strong>
+            <span>info@vibecodestudio.in</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.1s">
+          <div class="contact-item-icon">📱</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <span>+91 82176 79297</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.2s">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <strong>Location</strong>
+            <span>Serving India & Globally</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal" style="transition-delay:.15s">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="contactName" placeholder="your name" />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="contactEmail" placeholder="email id" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="contactPhone" placeholder="phone number" />
+          </div>
+          <div class="form-group">
+            <label>Service Needed *</label>
+            <select id="contactService">
+              <option value="">Select a service…</option>
+              <option>Web Development</option>
+              <option value="Mobile App" selected>Mobile App</option>
+              <option>UI/UX Design</option>
+              <option>SEO & Growth</option>
+              <option>Automation System</option>
+              <option>AI Chatbot</option>
+              <option>Custom Service</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Budget Range</label>
+          <select id="contactBudget">
+            <option value="">Select budget…</option>
+            <option>Under ₹25,000</option>
+            <option>₹25,000 – ₹75,000</option>
+            <option>₹75,000 – ₹1,50,000</option>
+            <option>₹1,50,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tell us about your project *</label>
+          <textarea id="contactDescription"
+            placeholder="Describe your idea, goals, timeline, and anything else you'd like us to know…"></textarea>
+        </div>
+        <button class="form-submit" id="contactSubmitBtn" onclick="handleSubmit(this)">
+          Send Message →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-card">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">vibecode<span>.studio</span></div>
+          <p>
+            vibecode helps founders build modern websites,
+            apps, and digital products that scale.
+          </p>
+          <div class="footer-socials">
+            <a href="https://x.com/vibecodestudi0" aria-label="Follow us on X">𝕏</a>
+            <a href="https://www.instagram.com/vibecode.studio/" aria-label="Follow us on Instagram">ig</a>
+            <a href="#" aria-label="Follow us on Facebook">fb</a>
+          </div>
+
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="web-development.html">Web Development</a>
+          <a href="mobile-app-development.html">Mobile Apps</a>
+          <a href="ui-ux-design.html">UI/UX Design</a>
+          <a href="seo-growth-marketing.html">SEO & Growth</a>
+          <a href="automation-systems.html">Automation System</a>
+          <a href="ai-chatbot-development.html">AI Chatbot</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="index.html#about">About</a>
+          <a href="index.html#portfolio">Work</a>
+          <a href="index.html#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <a href="mailto:info@vibecodestudio.in">info@vibecodestudio.in</a>
+            <a href="https://wa.me/918217679297" target="_blank" rel="noopener noreferrer">+91 82176 79297</a>
+            <a href="#">Mysore, India</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 vibecode.studio. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bg-text">vibecode</div>
+  </footer>
+
+  <!-- ── 3D Robot Mascot & Chatbot ── -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-title">vibe<span>bot</span></div>
+        <button class="chatbot-close" id="chatbotClose">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="message bot-message" id="chatbotWelcomeMsg">Hi there! 👋 I'm Vibebot, your professional assistant.
+          How can I help you today?</div>
+      </div>
+
+      <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+        <button class="quick-reply-btn">What are your services?</button>
+        <button class="quick-reply-btn">How much is a website?</button>
+        <button class="quick-reply-btn">Contact Sales</button>
+      </div>
+
+      <div class="chatbot-input-area">
+        <input type="text" id="chatbotInput" placeholder="Type your message...">
+        <button id="chatbotSend"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <div class="chatbot-icon" id="chatbotIcon">
+      <model-viewer src="robot.glb" camera-controls disable-zoom disable-pan shadow-intensity="1"
+        environment-image="neutral" interaction-prompt="none" style="width: 100%; height: 100%; cursor: pointer;">
+      </model-viewer>
+    </div>
+  </div>
+
+  <script type="module" src="robot.js"></script>
+  <script src="script.js" defer></script>
+
+  <script>
+    lucide.createIcons();
+
+    // FAQ toggle function
+    function toggleFaq(element) {
+      element.classList.toggle('active');
+    }
+
+    // Mobile nav toggle
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobileNav');
+      if (mobileNav) {
+        mobileNav.classList.toggle('active');
+      }
+    }
+
+    // Form submit handler
+    function handleSubmit(btn) {
+      alert('Thank you for reaching out! Our team will get back to you within 24 hours.');
+    }
+
+    // Reveal animations on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < windowHeight - 100) {
+          el.classList.add('revealed');
+        }
+      });
+    }
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', () => {
+      checkReveal();
+      lucide.createIcons();
+    });
+    checkReveal();
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI/UX Design Agency for Startups | Vibecode Studio</title>
+  <meta name="description"
+    content="Expert UI/UX design services for digital products. We craft beautiful, intuitive, and user-centric designs that elevate your brand and drive conversions." />
+  <meta name="keywords"
+    content="ui ux design agency, ui ux design for startups, digital product design, web app design, user experience design company" />
+  <meta name="author" content="vibecode.studio" />
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Geo Tags for Local SEO -->
+  <meta name="geo.region" content="IN-KA" />
+  <meta name="geo.placename" content="Mysore" />
+  <meta name="geo.position" content="12.2958;76.6394" />
+  <meta name="ICBM" content="12.2958, 76.6394" />
+
+  <link rel="canonical" href="https://vibecodestudio.in/ui-ux-design.html" />
+  <link rel="alternate" hreflang="en" href="https://vibecodestudio.in/ui-ux-design.html" />
+  <link rel="alternate" hreflang="x-default" href="https://vibecodestudio.in/ui-ux-design.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vibecodestudio.in/ui-ux-design.html" />
+  <meta property="og:title" content="UI/UX Design Agency for Startups | Vibecode Studio" />
+  <meta property="og:description"
+    content="Expert UI/UX design services for digital products. We craft beautiful, intuitive, and user-centric designs." />
+  <meta property="og:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://vibecodestudio.in/ui-ux-design.html" />
+  <meta name="twitter:title" content="UI/UX Design Agency for Startups | Vibecode Studio" />
+  <meta name="twitter:description"
+    content="Expert UI/UX design services for digital products. We craft beautiful, intuitive, and user-centric designs." />
+  <meta name="twitter:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <script type="application/ld+json">
+    {
+      "@type": "Service",
+      "serviceType": "UI/UX Design for Startups",
+      "areaServed": "Worldwide"
+    }
+  </script>
+
+  <script>
+    if (sessionStorage.getItem("loaderSeen")) {
+      document.documentElement.classList.add("skip-loader");
+    }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="logo.PNG">
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="shortcut icon" href="favicon.ico?v=2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+
+  <style>
+    /* Additional styles for consistency */
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      color: var(--txt);
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--cyan);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 1.8rem;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .faq-item:hover {
+      border-color: var(--cyan);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transform: translateY(-2px);
+    }
+
+    .faq-question {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--txt);
+    }
+
+    .faq-answer {
+      margin-top: 1rem;
+      padding-left: 2.5rem;
+      color: var(--txt-sm);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-icon {
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mobile-nav {
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-nav.active {
+      transform: translateX(0);
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "UI/UX Design for Startups",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "vibecode.studio",
+      "image": "https://vibecodestudio.in/logo.PNG"
+    },
+    "description": "Expert UI/UX design services for digital products. We craft beautiful, intuitive, and user-centric designs that elevate your brand and drive conversions."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img src="logo.PNG" class="loader-logo" id="loaderLogo" alt="logo" />
+      <div class="loader-text"><span id="typingText"></span><span class="cursor-blink">|</span></div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+      <img src="logo.PNG" alt="logo" style="height:22px; width:auto;">
+      vibecode<span>.studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#portfolio">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Start a Project →</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" onclick="toggleMobileNav()">✕</span>
+    <a href="index.html#services" onclick="toggleMobileNav()">Services</a>
+    <a href="index.html#portfolio" onclick="toggleMobileNav()">Work</a>
+    <a href="index.html#about" onclick="toggleMobileNav()">About</a>
+    <a href="index.html#testimonials" onclick="toggleMobileNav()">Reviews</a>
+    <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg-blob"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <div class="hero-tag-dot"></div>
+        Design Meets Logic
+      </div>
+      <h1 class="hero-title reveal" style="transition-delay: 0.1s;">
+        UI/UX Design <br><span class="accent">for Startups</span>
+      </h1>
+      <p class="hero-sub reveal" style="transition-delay: 0.2s;">
+        Great products are built purely for the user. We design striking, pixel-perfect interfaces paired with
+        frictionless user journeys that drive engagement, retention, and growth.
+      </p>
+      <div class="hero-cta reveal" style="transition-delay: 0.3s; display: flex; gap: 1rem; align-items: center;">
+        <a href="#contact" class="btn-primary" style="display: flex; align-items: center; gap: 8px;">
+          Transform Your UX <i data-lucide="pen-tool" style="width: 18px; height: 18px;"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal"
+      style="transition-delay: 0.4s; display: flex; justify-content: center; align-items: center;">
+      <div class="iso-wrapper">
+        <div class="iso-container" style="width: 300px; height: 240px;">
+          <!-- Base Design Canvas -->
+          <div class="iso-layer"
+            style="transform: translateZ(0px); background: #ffffff; border: 1.5px solid var(--txt); border-radius: 16px; box-shadow: -10px 10px 0px rgba(0,0,0,0.03); display: flex;">
+            <!-- Sidebar -->
+            <div
+              style="width: 25%; height: 100%; border-right: 1.5px solid var(--txt); padding: 15px 10px; display: flex; flex-direction: column; gap: 10px;">
+              <div style="width: 80%; height: 4px; background: rgba(0,0,0,0.1); border-radius: 2px;"></div>
+              <div style="width: 60%; height: 4px; background: rgba(0,0,0,0.1); border-radius: 2px;"></div>
+              <div style="width: 90%; height: 4px; background: rgba(0,0,0,0.1); border-radius: 2px;"></div>
+            </div>
+            <!-- Main Artboard -->
+            <div
+              style="flex: 1; padding: 20px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.02);">
+              <div
+                style="width: 100%; height: 100%; background: #fff; border: 1.5px dashed var(--txt); border-radius: 8px; display: flex; flex-direction: column; padding: 15px; gap: 10px;">
+                <div style="width: 40px; height: 40px; background: rgba(0,0,0,0.05); border-radius: 8px;"></div>
+                <div style="width: 70%; height: 6px; background: rgba(0,0,0,0.1); border-radius: 3px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Tool Panel -->
+          <div class="iso-element"
+            style="width: 40px; top: 30px; left: -25px; transform: translateZ(50px); background: #fff; border: 1.5px solid var(--txt); border-radius: 20px; padding: 16px 0; display: flex; flex-direction: column; align-items: center; gap: 14px; box-shadow: -6px 6px 0px rgba(0,0,0,0.03);">
+            <i data-lucide="mouse-pointer-2" style="width: 16px; height: 16px; color: var(--txt);"></i>
+            <i data-lucide="type" style="width: 16px; height: 16px; color: var(--txt);"></i>
+            <i data-lucide="layers" style="width: 16px; height: 16px; color: var(--txt);"></i>
+          </div>
+
+          <!-- Floating UI Component -->
+          <div class="iso-element"
+            style="width: 140px; top: 120px; left: 160px; transform: translateZ(70px); background: #fff; border: 1.5px solid var(--txt); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 10px; box-shadow: -8px 8px 0px rgba(0,0,0,0.03);">
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <div
+                style="width: 24px; height: 24px; background: #a7f3d0; border: 1.5px solid var(--txt); border-radius: 6px;">
+              </div>
+              <div style="flex: 1; height: 6px; background: rgba(0,0,0,0.05); border-radius: 3px;"></div>
+            </div>
+            <div
+              style="width: 100%; height: 24px; background: var(--txt); border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+              <div style="width: 30px; height: 4px; background: #fff; border-radius: 2px;"></div>
+            </div>
+          </div>
+
+          <!-- Color Palette Swatches -->
+          <div class="iso-element"
+            style="width: 100px; top: -30px; right: 20px; transform: translateZ(60px); background: #fff; border: 1.5px solid var(--txt); border-radius: 12px; padding: 10px; display: flex; gap: 8px; box-shadow: -6px 6px 0px rgba(0,0,0,0.03);">
+            <div
+              style="width: 24px; height: 24px; background: #a7f3d0; border: 1.5px solid var(--txt); border-radius: 6px;">
+            </div>
+            <div style="width: 24px; height: 24px; background: var(--txt); border-radius: 6px;"></div>
+            <div
+              style="width: 24px; height: 24px; background: rgba(0,0,0,0.05); border: 1.5px dashed var(--txt); border-radius: 6px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED CONTENT SECTION ── -->
+  <section id="content" style="padding: 5rem 5%;">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Our Expertise</div>
+      <h2 class="section-title reveal">Crafting Digital Experiences That Convert</h2>
+      <p style="color: var(--txt-sm); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;" class="reveal">
+        Your product's interface is often the absolute deciding factor in whether a user stays or churns. As a
+        specialized UI/UX design agency, we look beyond the aesthetics. We dive deep into user psychology, wireframing,
+        and interactive prototyping to build interfaces that not only look premium but feel effortlessly intuitive.
+        Our design process has helped 50+ startups increase user retention by an average of 35% within the first 3
+        months post-launch.
+      </p>
+
+      <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1.5rem;" class="reveal">What We Design</h3>
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="monitor-smartphone" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Web & Mobile Apps
+          </h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Cohesive, full-scale digital product
+            design from wireframes to high-fidelity interactive prototypes with user flows.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="layout-dashboard" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">SaaS Dashboards
+          </h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Decluttering complex data points into
+            beautiful, actionable management interfaces that improve decision-making speed.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="palette" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Brand Identity &
+            Web Design</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Establishing trust immediately with
+            premium marketing websites, landing pages, and complete visual identity systems.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="search" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">UX Audits &
+            Research</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Identifying friction points in your
+            current product and providing actionable redesign maps backed by user research.</p>
+        </div>
+      </div>
+
+      <div class="reveal"
+        style="background: linear-gradient(135deg, rgba(15,108,255,0.05), rgba(15,108,255,0.02)); border-radius: 24px; padding: 2rem; margin: 2rem 0;">
+        <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Design That Speaks To Your Users</h3>
+        <p style="color: var(--txt-sm); font-size: 1.05rem; line-height: 1.8;">
+          For startups, an incredible user experience is your greatest competitive advantage against established legacy
+          giants. We employ modern, conversion-focused design standards so you can launch a product that your users
+          genuinely love from day one. Our design-to-development workflow ensures pixel-perfect implementation with zero
+          design debt, saving you time and money on revisions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED FAQ SECTION (Accordion Style) ── -->
+  <section id="faq" style="padding: 5rem 5%; background: var(--gray-lt);">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Knowledge Base</div>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="reveal" style="color: var(--txt-sm); margin-bottom: 2rem; font-size: 1rem;">Everything you need to know
+        about our UI/UX design process. Can't find the answer? <a href="#contact" style="color: var(--cyan);">Contact
+          our team →</a></p>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="figma" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>What tools do you use for UI/UX Design?</span>
+        </div>
+        <div class="faq-answer">
+          Figma is our primary workspace. It allows for real-time collaboration with your team, interactive prototyping,
+          and seamless handoffs customized perfectly for modern frontend developers. We also use Miro for user journey
+          mapping, user flows, and collaborative workshops to ensure everyone is aligned throughout the design process.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="refresh-cw" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Can you redesign our existing application?</span>
+        </div>
+        <div class="faq-answer">
+          Yes. We start with a comprehensive UX audit of your current platform to identify drop-off points and friction,
+          then redesign the workflow iteratively to ensure maximum ROI without totally alienating your current active
+          user base. We involve your users in the research phase through surveys and usability testing to ensure the new
+          design truly addresses their pain points.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="code-2" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you also develop the designs you create?</span>
+        </div>
+        <div class="faq-answer">
+          Yes! While we can easily hand off Figma files to your internal developers, we are a full-service technical
+          agency. We highly recommend having our web and mobile engineering teams build the designs for 1:1 pixel
+          perfection. Our design and development teams work in sync, ensuring that the final product matches the
+          prototype exactly with no visual discrepancies or UX gaps.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="clock" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>How long does the design process take?</span>
+        </div>
+        <div class="faq-answer">
+          Timeline depends on project complexity. A typical MVP design (10-15 screens) takes 2-4 weeks, including
+          research, wireframing, UI design, and interactive prototyping. Complex SaaS platforms or full product
+          redesigns typically take 4-8 weeks. We work in agile sprints, providing regular checkpoints for feedback and
+          iteration to keep the project moving efficiently.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="users" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you involve user testing in your process?</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely! User testing is a critical part of our design methodology. We conduct moderated and unmoderated
+          usability tests on prototypes with real users to validate our design decisions before development begins. This
+          approach helps us catch usability issues early, saving significant time and cost on post-launch fixes.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="palette" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you provide design systems and style guides?</span>
+        </div>
+        <div class="faq-answer">
+          Yes, we deliver comprehensive design systems and component libraries alongside your final designs. This
+          includes typography scales, color systems, UI component documentation, and interaction patterns. This ensures
+          consistency across your product and makes future feature development faster and more cohesive.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label reveal">Get In Touch</div>
+        <h2 class="section-title reveal">Let's Build Something Great.</h2>
+        <p class="reveal" style="font-size:.9rem;color:var(--txt-sm);line-height:1.75;margin-bottom:2rem;">Tell us about
+          your project and we'll get back to you within 24 hours with a free consultation and rough estimate.</p>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">📧</div>
+          <div>
+            <strong>Email Us</strong>
+            <span>info@vibecodestudio.in</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.1s">
+          <div class="contact-item-icon">📱</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <span>+91 82176 79297</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.2s">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <strong>Location</strong>
+            <span>Serving India & Globally</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal" style="transition-delay:.15s">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="contactName" placeholder="your name" />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="contactEmail" placeholder="email id" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="contactPhone" placeholder="phone number" />
+          </div>
+          <div class="form-group">
+            <label>Service Needed *</label>
+            <select id="contactService">
+              <option value="">Select a service…</option>
+              <option>Web Development</option>
+              <option>Mobile App</option>
+              <option value="UI/UX Design" selected>UI/UX Design</option>
+              <option>SEO & Growth</option>
+              <option>Automation System</option>
+              <option>AI Chatbot</option>
+              <option>Custom Service</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Budget Range</label>
+          <select id="contactBudget">
+            <option value="">Select budget…</option>
+            <option>Under ₹25,000</option>
+            <option>₹25,000 – ₹75,000</option>
+            <option>₹75,000 – ₹1,50,000</option>
+            <option>₹1,50,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tell us about your project *</label>
+          <textarea id="contactDescription"
+            placeholder="Describe your idea, goals, timeline, and anything else you'd like us to know…"></textarea>
+        </div>
+        <button class="form-submit" id="contactSubmitBtn" onclick="handleSubmit(this)">
+          Send Message →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-card">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">vibecode<span>.studio</span></div>
+          <p>
+            vibecode helps founders build modern websites,
+            apps, and digital products that scale.
+          </p>
+          <div class="footer-socials">
+            <a href="https://x.com/vibecodestudi0" aria-label="Follow us on X">𝕏</a>
+            <a href="https://www.instagram.com/vibecode.studio/" aria-label="Follow us on Instagram">ig</a>
+            <a href="#" aria-label="Follow us on Facebook">fb</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="web-development.html">Web Development</a>
+          <a href="mobile-app-development.html">Mobile Apps</a>
+          <a href="ui-ux-design.html">UI/UX Design</a>
+          <a href="seo-growth-marketing.html">SEO & Growth</a>
+          <a href="automation-systems.html">Automation System</a>
+          <a href="ai-chatbot-development.html">AI Chatbot</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="index.html#about">About</a>
+          <a href="index.html#portfolio">Work</a>
+          <a href="index.html#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <a href="mailto:info@vibecodestudio.in">info@vibecodestudio.in</a>
+            <a href="https://wa.me/918217679297" target="_blank" rel="noopener noreferrer">+91 82176 79297</a>
+            <a href="#">Mysore, India</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 vibecode.studio. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bg-text">vibecode</div>
+  </footer>
+
+  <!-- ── 3D Robot Mascot & Chatbot ── -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-title">vibe<span>bot</span></div>
+        <button class="chatbot-close" id="chatbotClose">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="message bot-message" id="chatbotWelcomeMsg">Hi there! 👋 I'm Vibebot, your professional assistant.
+          How can I help you today?</div>
+      </div>
+
+      <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+        <button class="quick-reply-btn">What are your services?</button>
+        <button class="quick-reply-btn">How much is a website?</button>
+        <button class="quick-reply-btn">Contact Sales</button>
+      </div>
+
+      <div class="chatbot-input-area">
+        <input type="text" id="chatbotInput" placeholder="Type your message...">
+        <button id="chatbotSend"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <div class="chatbot-icon" id="chatbotIcon">
+      <model-viewer src="robot.glb" camera-controls disable-zoom disable-pan shadow-intensity="1"
+        environment-image="neutral" interaction-prompt="none" style="width: 100%; height: 100%; cursor: pointer;">
+      </model-viewer>
+    </div>
+  </div>
+
+  <script type="module" src="robot.js"></script>
+  <script src="script.js" defer></script>
+
+  <script>
+    lucide.createIcons();
+
+    // FAQ toggle function
+    function toggleFaq(element) {
+      element.classList.toggle('active');
+    }
+
+    // Mobile nav toggle
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobileNav');
+      if (mobileNav) {
+        mobileNav.classList.toggle('active');
+      }
+    }
+
+    // Form submit handler
+    function handleSubmit(btn) {
+      alert('Thank you for reaching out! Our team will get back to you within 24 hours.');
+    }
+
+    // Reveal animations on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < windowHeight - 100) {
+          el.classList.add('revealed');
+        }
+      });
+    }
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', () => {
+      checkReveal();
+      lucide.createIcons();
+    });
+    checkReveal();
+  </script>
+
+</body>
+
+</html>

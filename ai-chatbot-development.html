@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot Development for Startups | Vibecode Studio</title>
+  <meta name="description"
+    content="Custom AI chatbot development and LLM integration. Enhance customer support and automate sales with intelligent, context-aware AI agents." />
+  <meta name="keywords"
+    content="ai chatbot development company, custom llm integration, startup ai solutions, automated customer support ai, intelligent ai agents" />
+  <meta name="author" content="vibecode.studio" />
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Geo Tags for Local SEO -->
+  <meta name="geo.region" content="IN-KA" />
+  <meta name="geo.placename" content="Mysore" />
+  <meta name="geo.position" content="12.2958;76.6394" />
+  <meta name="ICBM" content="12.2958, 76.6394" />
+
+  <link rel="canonical" href="https://vibecodestudio.in/ai-chatbot-development.html" />
+  <link rel="alternate" hreflang="en" href="https://vibecodestudio.in/ai-chatbot-development.html" />
+  <link rel="alternate" hreflang="x-default" href="https://vibecodestudio.in/ai-chatbot-development.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vibecodestudio.in/ai-chatbot-development.html" />
+  <meta property="og:title" content="AI Chatbot Development for Startups | Vibecode Studio" />
+  <meta property="og:description"
+    content="Custom AI chatbot development and LLM integration. Enhance customer support and automate sales with AI agents." />
+  <meta property="og:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://vibecodestudio.in/ai-chatbot-development.html" />
+  <meta name="twitter:title" content="AI Chatbot Development for Startups | Vibecode Studio" />
+  <meta name="twitter:description"
+    content="Custom AI chatbot development and LLM integration. Enhance customer support and automate sales with AI agents." />
+  <meta name="twitter:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <script type="application/ld+json">
+    {
+      "@type": "Service",
+      "serviceType": "AI Chatbot Development",
+      "areaServed": "Worldwide"
+    }
+  </script>
+
+  <script>
+    if (sessionStorage.getItem("loaderSeen")) {
+      document.documentElement.classList.add("skip-loader");
+    }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="logo.PNG">
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="shortcut icon" href="favicon.ico?v=2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+
+  <style>
+    /* Additional styles for consistency */
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      color: var(--txt);
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--cyan);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 1.8rem;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .faq-item:hover {
+      border-color: var(--cyan);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transform: translateY(-2px);
+    }
+
+    .faq-question {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--txt);
+    }
+
+    .faq-answer {
+      margin-top: 1rem;
+      padding-left: 2.5rem;
+      color: var(--txt-sm);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-icon {
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mobile-nav {
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-nav.active {
+      transform: translateX(0);
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Chatbot Development for Startups",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "vibecode.studio",
+      "image": "https://vibecodestudio.in/logo.PNG"
+    },
+    "description": "Custom AI chatbot development and LLM integration. Enhance customer support and automate sales with intelligent, context-aware AI agents."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img src="logo.PNG" class="loader-logo" id="loaderLogo" alt="logo" />
+      <div class="loader-text"><span id="typingText"></span><span class="cursor-blink">|</span></div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+      <img src="logo.PNG" alt="logo" style="height:22px; width:auto;">
+      vibecode<span>.studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#portfolio">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Start a Project →</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" onclick="toggleMobileNav()">✕</span>
+    <a href="index.html#services" onclick="toggleMobileNav()">Services</a>
+    <a href="index.html#portfolio" onclick="toggleMobileNav()">Work</a>
+    <a href="index.html#about" onclick="toggleMobileNav()">About</a>
+    <a href="index.html#testimonials" onclick="toggleMobileNav()">Reviews</a>
+    <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg-blob"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <div class="hero-tag-dot"></div>
+        24/7 Intelligence
+      </div>
+      <h1 class="hero-title reveal" style="transition-delay: 0.1s;">
+        AI Chatbot <br><span class="accent">Development</span>
+      </h1>
+      <p class="hero-sub reveal" style="transition-delay: 0.2s;">
+        Empower your platform with intelligent, LLM-powered conversational agents. Resolve support tickets faster,
+        capture leads effortlessly, and boost your overall customer satisfaction. Our AI agents typically handle 70-80%
+        of support inquiries autonomously.
+      </p>
+      <div class="hero-cta reveal" style="transition-delay: 0.3s; display: flex; gap: 1rem; align-items: center;">
+        <a href="#contact" class="btn-primary" style="display: flex; align-items: center; gap: 8px;">
+          Build Your AI Agent <i data-lucide="bot" style="width: 18px; height: 18px;"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal"
+      style="transition-delay: 0.4s; display: flex; justify-content: center; align-items: center;">
+      <div class="iso-wrapper">
+        <div class="iso-container" style="width: 260px; height: 320px;">
+          <!-- Base AI Chat Interface -->
+          <div class="iso-layer"
+            style="transform: translateZ(0px); background: #ffffff; border: 1.5px solid var(--txt); border-radius: 16px; box-shadow: -10px 10px 0px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
+            <div
+              style="height: 48px; border-bottom: 1.5px solid var(--txt); display: flex; align-items: center; padding: 0 16px; gap: 10px;">
+              <div
+                style="width: 24px; height: 24px; background: #a7f3d0; border: 1.5px solid var(--txt); border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                <i data-lucide="bot" style="width: 14px; height: 14px; color: var(--txt);"></i>
+              </div>
+              <div style="width: 60px; height: 6px; background: rgba(0,0,0,0.2); border-radius: 3px;"></div>
+            </div>
+            <div style="flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 16px;">
+              <!-- Bot Msg -->
+              <div
+                style="align-self: flex-start; max-width: 80%; padding: 12px; background: rgba(0,0,0,0.03); border: 1.5px solid var(--txt); border-radius: 12px 12px 12px 2px;">
+                <div style="width: 100px; height: 4px; background: var(--txt); border-radius: 2px; margin-bottom: 6px;">
+                </div>
+                <div style="width: 60px; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+              </div>
+              <!-- User Msg -->
+              <div
+                style="align-self: flex-end; max-width: 80%; padding: 12px; background: var(--cyan); border-radius: 12px 12px 2px 12px; border: 1.5px solid var(--txt);">
+                <div
+                  style="width: 80px; height: 4px; background: rgba(255,255,255,0.8); border-radius: 2px; margin-bottom: 6px;">
+                </div>
+                <div style="width: 40px; height: 4px; background: rgba(255,255,255,0.6); border-radius: 2px;"></div>
+              </div>
+            </div>
+            <!-- Input Area -->
+            <div
+              style="height: 50px; border-top: 1.5px solid var(--txt); padding: 10px 16px; display: flex; align-items: center; justify-content: space-between;">
+              <div style="width: 60%; height: 6px; background: rgba(0,0,0,0.05); border-radius: 3px;"></div>
+              <div
+                style="width: 24px; height: 24px; background: var(--txt); border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                <i data-lucide="arrow-up" style="width: 14px; height: 14px; color: #fff;"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Generation Widget -->
+          <div class="iso-element"
+            style="width: 180px; top: 120px; left: -40px; transform: translateZ(50px); background: #fff; border: 1.5px solid var(--txt); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 12px; box-shadow: -8px 8px 0px rgba(0,0,0,0.03);">
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <i data-lucide="sparkles" style="width: 16px; height: 16px; color: var(--txt);"></i>
+              <div style="font-family: 'DM Mono', monospace; font-size: 0.7rem; font-weight: 700; color: var(--txt);">
+                Synthesizing...</div>
+            </div>
+            <!-- Progress Bar -->
+            <div
+              style="width: 100%; height: 6px; background: rgba(0,0,0,0.05); border: 1.5px solid var(--txt); border-radius: 3px; overflow: hidden;">
+              <div style="width: 60%; height: 100%; background: #a7f3d0; border-right: 1.5px solid var(--txt);"></div>
+            </div>
+          </div>
+
+          <!-- Small Floating Data Block -->
+          <div class="iso-element"
+            style="width: 100px; top: 40px; right: -30px; transform: translateZ(70px); background: #fff; border: 1.5px solid var(--txt); border-radius: 12px; padding: 10px; display: flex; align-items: center; gap: 8px; box-shadow: -6px 6px 0px rgba(0,0,0,0.03);">
+            <div style="width: 16px; height: 16px; background: rgba(0,0,0,0.05); border-radius: 4px;"></div>
+            <div style="width: 40px; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED CONTENT SECTION ── -->
+  <section id="content" style="padding: 5rem 5%;">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Conversational AI</div>
+      <h2 class="section-title reveal">Next-Generation Conversational Interfaces</h2>
+      <p style="color: var(--txt-sm); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;" class="reveal">
+        Legacy chatbots frustrated users with rigid, rule-based decision trees. Modern AI chatbot development completely
+        changes the game. By fine-tuning large language models (like OpenAI's GPT-4o, Anthropic's Claude, or open-source
+        alternatives like Llama 3) on your
+        specific company knowledge base, we deploy agents that truly understand context, intent, and subtle nuance.
+        Our clients report 50-70% reduction in support ticket volume and 3x faster response times.
+      </p>
+
+      <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1.5rem;" class="reveal">Use Cases for Modern
+        Startups</h3>
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="message-square" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Automated Customer
+            Support</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Resolve 70%+ of tier-1 support
+            inquiries instantly, without human intervention, while escalating complex issues to human agents with full
+            conversation context.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="target" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Sales Development
+            Reps (SDRs)</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">AI that qualifies leads natively, books
+            targeted meetings, answers product questions, and updates your CRM automatically 24/7.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="compass" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">In-App Data
+            Concierges</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Helping your users quickly navigate
+            your complex SaaS product, find data insights, and complete tasks using natural language prompts.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="database" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Internal Knowledge
+            Retrieval</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Assisting your team in querying massive
+            internal company databases, documentation, and Slack history instantly—like having a subject matter expert
+            always on call.</p>
+        </div>
+      </div>
+
+      <div class="reveal"
+        style="background: linear-gradient(135deg, rgba(15,108,255,0.05), rgba(15,108,255,0.02)); border-radius: 24px; padding: 2rem; margin: 2rem 0;">
+        <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Seamless Integration & Deployment</h3>
+        <p style="color: var(--txt-sm); font-size: 1.05rem; line-height: 1.8;">
+          Building the AI model is only half the battle. We specialize in weaving the chatbot deeply into your existing
+          infrastructure. Whether it sits natively on your Next.js application, lives inside WhatsApp, Slack, or
+          Discord, or
+          connects directly to your Zendesk, Intercom, or HubSpot instance, the integration is technically flawless and
+          highly scalable.
+          We also provide analytics dashboards to track conversation metrics and continuously improve your AI agent.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED FAQ SECTION (Accordion Style) ── -->
+  <section id="faq" style="padding: 5rem 5%; background: var(--gray-lt);">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Knowledge Base</div>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="reveal" style="color: var(--txt-sm); margin-bottom: 2rem; font-size: 1rem;">Everything you need to know
+        about AI chatbot development. Can't find the answer? <a href="#contact" style="color: var(--cyan);">Contact our
+          team →</a></p>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="brain" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Will the AI hallucinate or give wrong answers?</span>
+        </div>
+        <div class="faq-answer">
+          To entirely prevent hallucinations, we use a sophisticated architecture called Retrieval-Augmented Generation
+          (RAG). The AI is stringently restricted to only answer questions using the isolated, verified data provided
+          within your company's internal knowledge base, documentation, and FAQs. This ensures responses are accurate,
+          consistent, and aligned with your brand voice. We also implement confidence thresholds to gracefully handle
+          questions outside its knowledge scope.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="cpu" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>What models do you actually use?</span>
+        </div>
+        <div class="faq-answer">
+          While we frequently utilize industry leaders like OpenAI (GPT-4o, GPT-4 Turbo) and Anthropic (Claude 3.5
+          Sonnet) for their superior reasoning architecture and multi-modal capabilities, we can also deploy secure,
+          self-hosted open-source models (like Llama 3, Mistral, or Mixtral) for highly sensitive data requirements or
+          cost optimization. We help you choose the right model based on your specific use case, data privacy needs, and
+          budget.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="link" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Can the chatbot connect out to other apps?</span>
+        </div>
+        <div class="faq-answer">
+          Yes. With robust API integration, the chatbot isn't exclusively conversational—it acts as an agent. It can
+          easily query inventory levels, update an active CRM file (HubSpot, Salesforce), process a real-time refund via
+          Stripe, create support tickets in Zendesk, schedule calendar events, send Slack notifications, or even trigger
+          Zapier workflows. We build custom actions that make your chatbot a true automation partner.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="shield" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>How do you handle data privacy and security?</span>
+        </div>
+        <div class="faq-answer">
+          Data security is our top priority. We implement enterprise-grade security measures including end-to-end
+          encryption, role-based access controls, and compliance with GDPR, CCPA, and SOC2 standards. For sensitive
+          data, we can deploy chatbots on your own infrastructure (VPC/on-premise) with self-hosted LLMs, ensuring your
+          customer data never leaves your environment. All conversations are encrypted and can be configured with
+          automatic data retention policies.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="globe" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Can the chatbot speak multiple languages?</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely. Our AI chatbots support 50+ languages out of the box. The model automatically detects the user's
+          language and responds in the same language. This is perfect for startups with international customers. We can
+          also fine-tune the model for specific regional dialects or industry-specific terminology to ensure natural,
+          localized conversations.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="chart-line" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>How do you measure chatbot performance?</span>
+        </div>
+        <div class="faq-answer">
+          We provide comprehensive analytics dashboards tracking key metrics including: resolution rate (percentage of
+          conversations fully handled by AI), customer satisfaction scores (CSAT), average response time, conversation
+          handoff rate to humans, frequently asked questions, and cost savings calculations. We use these insights to
+          continuously fine-tune your AI agent, improve its accuracy, and identify gaps in your knowledge base.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label reveal">Get In Touch</div>
+        <h2 class="section-title reveal">Let's Build Something Great.</h2>
+        <p class="reveal" style="font-size:.9rem;color:var(--txt-sm);line-height:1.75;margin-bottom:2rem;">Tell us about
+          your project and we'll get back to you within 24 hours with a free consultation and rough estimate.</p>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">📧</div>
+          <div>
+            <strong>Email Us</strong>
+            <span>info@vibecodestudio.in</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.1s">
+          <div class="contact-item-icon">📱</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <span>+91 82176 79297</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.2s">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <strong>Location</strong>
+            <span>Serving India & Globally</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal" style="transition-delay:.15s">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="contactName" placeholder="your name" />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="contactEmail" placeholder="email id" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="contactPhone" placeholder="phone number" />
+          </div>
+          <div class="form-group">
+            <label>Service Needed *</label>
+            <select id="contactService">
+              <option value="">Select a service…</option>
+              <option>Web Development</option>
+              <option>Mobile App</option>
+              <option>UI/UX Design</option>
+              <option>SEO & Growth</option>
+              <option>Automation System</option>
+              <option value="AI Chatbot" selected>AI Chatbot</option>
+              <option>Custom Service</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Budget Range</label>
+          <select id="contactBudget">
+            <option value="">Select budget…</option>
+            <option>Under ₹25,000</option>
+            <option>₹25,000 – ₹75,000</option>
+            <option>₹75,000 – ₹1,50,000</option>
+            <option>₹1,50,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tell us about your project *</label>
+          <textarea id="contactDescription"
+            placeholder="Describe your idea, goals, timeline, and anything else you'd like us to know…"></textarea>
+        </div>
+        <button class="form-submit" id="contactSubmitBtn" onclick="handleSubmit(this)">
+          Send Message →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-card">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">vibecode<span>.studio</span></div>
+          <p>
+            vibecode helps founders build modern websites,
+            apps, and digital products that scale.
+          </p>
+          <div class="footer-socials">
+            <a href="https://x.com/vibecodestudi0" aria-label="Follow us on X">𝕏</a>
+            <a href="https://www.instagram.com/vibecode.studio/" aria-label="Follow us on Instagram">ig</a>
+            <a href="#" aria-label="Follow us on Facebook">fb</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="web-development.html">Web Development</a>
+          <a href="mobile-app-development.html">Mobile Apps</a>
+          <a href="ui-ux-design.html">UI/UX Design</a>
+          <a href="seo-growth-marketing.html">SEO & Growth</a>
+          <a href="automation-systems.html">Automation System</a>
+          <a href="ai-chatbot-development.html">AI Chatbot</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="index.html#about">About</a>
+          <a href="index.html#portfolio">Work</a>
+          <a href="index.html#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <a href="mailto:info@vibecodestudio.in">info@vibecodestudio.in</a>
+            <a href="https://wa.me/918217679297" target="_blank" rel="noopener noreferrer">+91 82176 79297</a>
+            <a href="#">Mysore, India</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 vibecode.studio. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bg-text">vibecode</div>
+  </footer>
+
+  <!-- ── 3D Robot Mascot & Chatbot ── -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-title">vibe<span>bot</span></div>
+        <button class="chatbot-close" id="chatbotClose">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="message bot-message" id="chatbotWelcomeMsg">Hi there! 👋 I'm Vibebot, your professional assistant.
+          How can I help you today?</div>
+      </div>
+
+      <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+        <button class="quick-reply-btn">What are your services?</button>
+        <button class="quick-reply-btn">How much is a website?</button>
+        <button class="quick-reply-btn">Contact Sales</button>
+      </div>
+
+      <div class="chatbot-input-area">
+        <input type="text" id="chatbotInput" placeholder="Type your message...">
+        <button id="chatbotSend"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <div class="chatbot-icon" id="chatbotIcon">
+      <model-viewer src="robot.glb" camera-controls disable-zoom disable-pan shadow-intensity="1"
+        environment-image="neutral" interaction-prompt="none" style="width: 100%; height: 100%; cursor: pointer;">
+      </model-viewer>
+    </div>
+  </div>
+
+  <script type="module" src="robot.js"></script>
+  <script src="script.js" defer></script>
+
+  <script>
+    lucide.createIcons();
+
+    // FAQ toggle function
+    function toggleFaq(element) {
+      element.classList.toggle('active');
+    }
+
+    // Mobile nav toggle
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobileNav');
+      if (mobileNav) {
+        mobileNav.classList.toggle('active');
+      }
+    }
+
+    // Form submit handler
+    function handleSubmit(btn) {
+      alert('Thank you for reaching out! Our team will get back to you within 24 hours.');
+    }
+
+    // Reveal animations on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < windowHeight - 100) {
+          el.classList.add('revealed');
+        }
+      });
+    }
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', () => {
+      checkReveal();
+      lucide.createIcons();
+    });
+    checkReveal();
+
+    // Pulse animation for typing indicator
+    const style = document.createElement('style');
+    style.textContent = `@keyframes pulse { 0%, 100% { opacity: 0.4; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.2); } }`;
+    document.head.appendChild(style);
+  </script>
+
+</body>
+
+</html>

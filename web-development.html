@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Company for Startups | Vibecode Studio</title>
+  <meta name="description"
+    content="Custom web development services for ambitious startups and founders. Build scalable SaaS, robust platforms, and modern websites with Vibecode Studio." />
+  <meta name="keywords"
+    content="web development company for startups, SaaS application development, startup website developer, modern web app development, React Next.js developers" />
+  <meta name="author" content="vibecode.studio" />
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Geo Tags for Local SEO -->
+  <meta name="geo.region" content="IN-KA" />
+  <meta name="geo.placename" content="Mysore" />
+  <meta name="geo.position" content="12.2958;76.6394" />
+  <meta name="ICBM" content="12.2958, 76.6394" />
+
+  <link rel="canonical" href="https://vibecodestudio.in/web-development.html" />
+  <link rel="alternate" hreflang="en" href="https://vibecodestudio.in/web-development.html" />
+  <link rel="alternate" hreflang="x-default" href="https://vibecodestudio.in/web-development.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vibecodestudio.in/web-development.html" />
+  <meta property="og:title" content="Web Development Company for Startups | Vibecode Studio" />
+  <meta property="og:description"
+    content="Custom web development services for ambitious startups and founders. Build scalable SaaS, robust platforms, and modern websites." />
+  <meta property="og:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://vibecodestudio.in/web-development.html" />
+  <meta name="twitter:title" content="Web Development Company for Startups | Vibecode Studio" />
+  <meta name="twitter:description"
+    content="Custom web development services for ambitious startups and founders. Build scalable SaaS, robust platforms, and modern websites." />
+  <meta name="twitter:image" content="https://vibecodestudio.in/logo.PNG" />
+
+  <script type="application/ld+json">
+    {
+      "@type": "Service",
+      "serviceType": "Web Development for Startups",
+      "areaServed": "Worldwide"
+    }
+  </script>
+
+  <script>
+    if (sessionStorage.getItem("loaderSeen")) {
+      document.documentElement.classList.add("skip-loader");
+    }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="logo.PNG">
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="shortcut icon" href="favicon.ico?v=2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+
+  <style>
+    /* Additional styles to ensure consistency */
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      color: var(--txt);
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--cyan);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 1.8rem;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .faq-item:hover {
+      border-color: var(--cyan);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transform: translateY(-2px);
+    }
+
+    .faq-question {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--txt);
+    }
+
+    .faq-answer {
+      margin-top: 1rem;
+      padding-left: 2.5rem;
+      color: var(--txt-sm);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-icon {
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Web Development for Startups",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "vibecode.studio",
+      "image": "https://vibecodestudio.in/logo.PNG"
+    },
+    "description": "Custom web development services for ambitious startups and founders. Build scalable SaaS, robust platforms, and modern websites."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img src="logo.PNG" class="loader-logo" id="loaderLogo" alt="logo" />
+      <div class="loader-text"><span id="typingText"></span><span class="cursor-blink">|</span></div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+      <img src="logo.PNG" alt="logo" style="height:22px; width:auto;">
+      vibecode<span>.studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#portfolio">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Start a Project →</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" onclick="toggleMobileNav()">✕</span>
+    <a href="index.html#services" onclick="toggleMobileNav()">Services</a>
+    <a href="index.html#portfolio" onclick="toggleMobileNav()">Work</a>
+    <a href="index.html#about" onclick="toggleMobileNav()">About</a>
+    <a href="index.html#testimonials" onclick="toggleMobileNav()">Reviews</a>
+    <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg-blob"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <div class="hero-tag-dot"></div>
+        Built to Scale
+      </div>
+      <h1 class="hero-title reveal" style="transition-delay: 0.1s;">
+        Web Development <br><span class="accent">for Startups</span>
+      </h1>
+      <p class="hero-sub reveal" style="transition-delay: 0.2s;">
+        We build custom websites, complex web applications, and scalable SaaS platforms for ambitious founders
+        worldwide. From MVP to enterprise scale.
+      </p>
+      <div class="hero-cta reveal" style="transition-delay: 0.3s; display: flex; gap: 1rem; align-items: center;">
+        <a href="#contact" class="btn-primary" style="display: flex; align-items: center; gap: 8px;">
+          Start Your NextJS Project <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal"
+      style="transition-delay: 0.4s; display: flex; justify-content: center; align-items: center;">
+      <div class="iso-wrapper">
+        <div class="iso-container" style="width: 250px; height: 320px;">
+          <!-- Base Layer: Web Wireframe -->
+          <div class="iso-layer"
+            style="transform: translateZ(0px); background: #ffffff; border: 1.5px solid var(--txt); border-radius: 20px; box-shadow: -10px 10px 0px rgba(0,0,0,0.03);">
+            <div
+              style="height: 32px; border-bottom: 1.5px solid var(--txt); display: flex; align-items: center; padding: 0 16px; gap: 6px;">
+              <div style="width: 10px; height: 10px; border: 1.5px solid var(--txt); border-radius: 50%;"></div>
+              <div style="width: 10px; height: 10px; border: 1.5px solid var(--txt); border-radius: 50%;"></div>
+              <div style="width: 10px; height: 10px; border: 1.5px solid var(--txt); border-radius: 50%;"></div>
+            </div>
+            <div style="padding: 20px; display: flex; flex-direction: column; gap: 16px;">
+              <!-- Wireframe header -->
+              <div style="display: flex; gap: 12px; align-items: center;">
+                <div
+                  style="width: 40px; height: 40px; border: 1.5px solid var(--txt); border-radius: 8px; background: rgba(0,0,0,0.02);">
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; gap: 6px;">
+                  <div style="width: 60%; height: 6px; background: rgba(0,0,0,0.06); border-radius: 3px;"></div>
+                  <div style="width: 40%; height: 6px; background: rgba(0,0,0,0.06); border-radius: 3px;"></div>
+                </div>
+              </div>
+              <!-- Wireframe Hero block -->
+              <div
+                style="width: 100%; height: 80px; background: var(--txt); border-radius: 12px; border: 1.5px solid var(--txt);">
+              </div>
+              <!-- Wireframe Grid -->
+              <div style="display: flex; gap: 12px;">
+                <div
+                  style="flex: 1; height: 60px; border: 1.5px solid var(--txt); border-radius: 8px; background: rgba(0,0,0,0.02); position: relative; overflow: hidden;">
+                  <div
+                    style="position: absolute; bottom: 0; right: 0; width: 60%; height: 60%; background: #a7f3d0; border-top: 1.5px solid var(--txt); border-left: 1.5px solid var(--txt); border-top-left-radius: 8px;">
+                  </div>
+                </div>
+                <div
+                  style="flex: 1; height: 60px; border: 1.5px solid var(--txt); border-radius: 8px; background: rgba(0,0,0,0.02);">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Component 1: Performance Chart -->
+          <div class="iso-element"
+            style="width: 190px; top: 180px; left: -60px; transform: translateZ(50px); background: #fff; border: 1.5px solid var(--txt); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px; box-shadow: -8px 8px 0px rgba(0,0,0,0.03);">
+            <div
+              style="font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 700; color: var(--txt); text-transform: uppercase; letter-spacing: 1px;">
+              Performance</div>
+            <div
+              style="display: flex; align-items: flex-end; justify-content: space-between; height: 40px; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 6px;">
+              <div style="width: 12px; height: 40%; background: var(--txt); border-radius: 2px;"></div>
+              <div style="width: 12px; height: 60%; background: var(--txt); border-radius: 2px;"></div>
+              <div style="width: 12px; height: 35%; background: var(--txt); border-radius: 2px;"></div>
+              <div style="width: 12px; height: 80%; background: var(--txt); border-radius: 2px;"></div>
+              <div
+                style="width: 12px; height: 100%; background: #a7f3d0; border-radius: 2px; border: 1.5px solid var(--txt);">
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="display: flex; gap: 4px;">
+                <div style="width: 16px; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+                <div style="width: 8px; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+              </div>
+              <div style="font-family: 'DM Mono', monospace; font-size: 0.8rem; font-weight: 700; color: var(--txt);">
+                85.3%</div>
+            </div>
+          </div>
+
+          <!-- Floating Component 2: Chat/Code Bubble -->
+          <div class="iso-element"
+            style="width: 160px; top: 10px; left: 160px; transform: translateZ(80px); background: #fff; border: 1.5px solid var(--txt); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 10px; box-shadow: -8px 8px 0px rgba(0,0,0,0.03);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 700; color: var(--txt);">
+                Console</div>
+              <div style="display: flex; align-items: center; gap: 4px;">
+                <i data-lucide="user" style="width: 10px; height: 10px; color: var(--txt);"></i>
+                <div style="font-family: 'DM Mono', monospace; font-size: 0.7rem; font-weight: 700; color: var(--txt);">
+                  42</div>
+              </div>
+            </div>
+            <div style="width: 100%; height: 1px; background: var(--txt); margin: 2px 0;"></div>
+            <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end; margin-top: 4px;">
+              <div style="padding: 6px 10px; background: #a7f3d0; border: 1.5px solid var(--txt); border-radius: 10px;">
+                <div style="display: flex; gap: 4px;">
+                  <div style="width: 12px; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+                  <div style="width: 20px; height: 4px; background: var(--txt); border-radius: 2px;"></div>
+                </div>
+              </div>
+              <div
+                style="padding: 6px 10px; background: rgba(0,0,0,0.05); border: 1.5px solid transparent; border-radius: 10px; align-self: flex-start;">
+                <div style="width: 30px; height: 4px; background: rgba(0,0,0,0.2); border-radius: 2px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Tool Panel -->
+          <div class="iso-element"
+            style="width: 44px; top: 120px; left: -40px; transform: translateZ(90px); background: #fff; border: 1.5px solid var(--txt); border-radius: 22px; padding: 12px 0; display: flex; flex-direction: column; align-items: center; gap: 14px; box-shadow: -6px 6px 0px rgba(0,0,0,0.03);">
+            <i data-lucide="activity" style="width: 16px; height: 16px; color: var(--txt);"></i>
+            <i data-lucide="message-square" style="width: 16px; height: 16px; color: var(--txt);"></i>
+            <div style="width: 20px; height: 2px; background: var(--txt); opacity: 0.2;"></div>
+            <i data-lucide="code" style="width: 16px; height: 16px; color: var(--txt);"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED CONTENT SECTION ── -->
+  <section id="content" style="padding: 5rem 5%;">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Our Expertise</div>
+      <h2 class="section-title reveal">Scalable, High-Performance Web Solutions</h2>
+      <p style="color: var(--txt-sm); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;" class="reveal">
+        As a specialized web development agency for startups, we know that speed to market is critical—but so is
+        technical debt. We leverage modern tech stacks to deliver web products that look stunning, load instantly, and
+        handle rapid user growth natively. Our team has helped over 50+ startups launch successfully and scale to
+        millions of users.
+      </p>
+
+      <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1.5rem;" class="reveal">What We Build</h3>
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="layout-template" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">SaaS Platforms</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">End-to-end multi-tenant architectures,
+            subscription billing, and complex dashboards with real-time analytics.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="rocket" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Startup MVPs</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Launch faster with core features
+            validated by real users to test your product-market fit. We specialize in 4-week MVP delivery.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="globe" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">Corporate &
+            Marketing Websites</h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">High-converting, SEO-optimized landing
+            pages designed to drive growth and capture leads effectively.</p>
+        </div>
+        <div
+          style="background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.05)'"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+          <div
+            style="width: 48px; height: 48px; background: rgba(13, 110, 253, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <i data-lucide="shopping-cart" style="color: var(--cyan); width: 24px; height: 24px;"></i>
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--txt);">E-commerce Stores
+          </h4>
+          <p style="color: var(--txt-sm); font-size: 0.95rem; line-height: 1.6;">Custom integrations and seamless,
+            lightning-fast checkout experiences that maximize conversion rates.</p>
+        </div>
+      </div>
+
+      <div class="reveal"
+        style="background: linear-gradient(135deg, rgba(15,108,255,0.05), rgba(15,108,255,0.02)); border-radius: 24px; padding: 2rem; margin: 2rem 0;">
+        <h3 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Why Startup Founders Choose Us</h3>
+        <p style="color: var(--txt-sm); font-size: 1.05rem; line-height: 1.8;">
+          We aren't just coders. We are an extension of your product team. Our global web development services are
+          designed to give your startup the exact architecture it needs to succeed. We build exclusively on modern,
+          performance-first frameworks like React, Next.js, and Node.js to ensure long-term viability and unparalleled
+          user experience. With transparent pricing, weekly updates, and post-launch support, we're the technical
+          partner that grows with you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UPDATED FAQ SECTION (Accordion Style) ── -->
+  <section id="faq" style="padding: 5rem 5%; background: var(--gray-lt);">
+    <div style="max-width: 90vw; margin: 0 auto;">
+      <div class="section-label reveal">Knowledge Base</div>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="reveal" style="color: var(--txt-sm); margin-bottom: 2rem; font-size: 1rem;">Everything you need to know
+        about working with us. Can't find the answer? <a href="#contact" style="color: var(--cyan);">Contact our team
+          →</a></p>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="help-circle" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>How long does it take to develop a web MVP?</span>
+        </div>
+        <div class="faq-answer">
+          Typically, a robust web app MVP takes between 4 to 8 weeks depending on complexity. We focus on engineering
+          the core functionalities flawlessly to get your product to market as fast as possible. For standard MVPs, we
+          offer a 4-week sprint option with essential features ready for user testing and investor demos.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="code-2" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>What technologies do you use for web development?</span>
+        </div>
+        <div class="faq-answer">
+          Our primary tech stack includes React, Next.js, Node.js, TypeScript, and Tailwind CSS. We choose modern tools
+          that guarantee scalability, blazing fast load times, and superior SEO performance. For backend, we work with
+          Node.js, Python, and cloud platforms like AWS, Vercel, and Firebase to ensure your application is
+          production-ready from day one.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="shield-check" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you assist with post-launch maintenance?</span>
+        </div>
+        <div class="faq-answer">
+          Yes! We offer ongoing retainer and maintenance packages to ensure your web application stays secure, updated,
+          and scales seamlessly as your user base grows. Our maintenance plans include security patches, performance
+          monitoring, bug fixes, and feature enhancements. We also provide 24/7 emergency support for critical issues.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="dollar-sign" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>What is your pricing model?</span>
+        </div>
+        <div class="faq-answer">
+          We offer flexible pricing based on your project scope and requirements. For startups, we typically work with
+          fixed-price project-based models for MVPs, or hourly retainers for ongoing development. Most MVP projects
+          range from ₹1,50,000 to ₹5,00,000 depending on complexity. We provide detailed quotes after understanding your
+          specific needs during a free consultation call.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="users" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Do you work with early-stage startups?</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely! Early-stage startups and first-time founders are our specialty. We understand the constraints of
+          bootstrapped teams and offer flexible payment structures, MVP-focused development to validate ideas quickly,
+          and strategic guidance on technical decisions that won't lead to costly reworks. Over 70% of our clients are
+          pre-seed or seed-stage startups.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <i data-lucide="refresh-cw" class="faq-icon" style="color: var(--cyan); width: 22px; height: 22px;"></i>
+          <span>Can you redesign or migrate my existing website?</span>
+        </div>
+        <div class="faq-answer">
+          Yes, we specialize in website redesigns and migrations. Whether you're moving from a legacy system to a modern
+          stack, need a design refresh, or want to improve performance and SEO, we handle the entire migration process
+          seamlessly with zero downtime. We ensure all content, SEO rankings, and user data are preserved during the
+          transition.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label reveal">Get In Touch</div>
+        <h2 class="section-title reveal">Let's Build Something Great.</h2>
+        <p class="reveal" style="font-size:.9rem;color:var(--txt-sm);line-height:1.75;margin-bottom:2rem;">Tell us about
+          your project and we'll get back to you within 24 hours with a free consultation and rough estimate.</p>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">📧</div>
+          <div>
+            <strong>Email Us</strong>
+            <span>info@vibecodestudio.in</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.1s">
+          <div class="contact-item-icon">📱</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <span>+91 82176 79297</span>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:.2s">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <strong>Location</strong>
+            <span>Serving India & Globally</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal" style="transition-delay:.15s">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="contactName" placeholder="your name" />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="contactEmail" placeholder="email id" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="contactPhone" placeholder="phone number" />
+          </div>
+          <div class="form-group">
+            <label>Service Needed *</label>
+            <select id="contactService">
+              <option value="Web Development" selected>Web Development</option>
+              <option>Mobile App</option>
+              <option>UI/UX Design</option>
+              <option>SEO & Growth</option>
+              <option>Automation System</option>
+              <option>AI Chatbot</option>
+              <option>Custom Service</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Budget Range</label>
+          <select id="contactBudget">
+            <option value="">Select budget…</option>
+            <option>Under ₹25,000</option>
+            <option>₹25,000 – ₹75,000</option>
+            <option>₹75,000 – ₹1,50,000</option>
+            <option>₹1,50,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tell us about your project *</label>
+          <textarea id="contactDescription"
+            placeholder="Describe your idea, goals, timeline, and anything else you'd like us to know…"></textarea>
+        </div>
+        <button class="form-submit" id="contactSubmitBtn" onclick="handleSubmit(this)">
+          Send Message →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-card">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">vibecode<span>.studio</span></div>
+          <p>
+            vibecode helps founders build modern websites,
+            apps, and digital products that scale.
+          </p>
+          <div class="footer-socials">
+            <a href="https://x.com/vibecodestudi0" aria-label="Follow us on X">𝕏</a>
+            <a href="https://www.instagram.com/vibecode.studio/" aria-label="Follow us on Instagram">ig</a>
+            <a href="#" aria-label="Follow us on Facebook">fb</a>
+          </div>
+
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="web-development.html">Web Development</a>
+          <a href="mobile-app-development.html">Mobile Apps</a>
+          <a href="ui-ux-design.html">UI/UX Design</a>
+          <a href="seo-growth-marketing.html">SEO & Growth</a>
+          <a href="automation-systems.html">Automation System</a>
+          <a href="ai-chatbot-development.html">AI Chatbot</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="index.html#about">About</a>
+          <a href="index.html#portfolio">Work</a>
+          <a href="index.html#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <a href="mailto:info@vibecodestudio.in">info@vibecodestudio.in</a>
+            <a href="https://wa.me/918217679297" target="_blank" rel="noopener noreferrer">+91 82176 79297</a>
+            <a href="#">Mysore, India</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 vibecode.studio. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bg-text">vibecode</div>
+  </footer>
+
+  <!-- ── 3D Robot Mascot & Chatbot ── -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-title">vibe<span>bot</span></div>
+        <button class="chatbot-close" id="chatbotClose">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="message bot-message" id="chatbotWelcomeMsg">Hi there! 👋 I'm Vibebot, your professional assistant.
+          How can I help you today?</div>
+      </div>
+
+      <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+        <button class="quick-reply-btn">What are your services?</button>
+        <button class="quick-reply-btn">How much is a website?</button>
+        <button class="quick-reply-btn">Contact Sales</button>
+      </div>
+
+      <div class="chatbot-input-area">
+        <input type="text" id="chatbotInput" placeholder="Type your message...">
+        <button id="chatbotSend"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <div class="chatbot-icon" id="chatbotIcon">
+      <model-viewer src="robot.glb" camera-controls disable-zoom disable-pan shadow-intensity="1"
+        environment-image="neutral" interaction-prompt="none" style="width: 100%; height: 100%; cursor: pointer;">
+      </model-viewer>
+    </div>
+  </div>
+
+  <script type="module" src="robot.js"></script>
+  <script src="script.js" defer></script>
+
+  <script>
+    lucide.createIcons();
+
+    // FAQ toggle function
+    function toggleFaq(element) {
+      element.classList.toggle('active');
+    }
+
+    // Mobile nav toggle
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobileNav');
+      if (mobileNav) {
+        mobileNav.classList.toggle('active');
+      }
+    }
+
+    // Form submit handler
+    function handleSubmit(btn) {
+      alert('Thank you for reaching out! Our team will get back to you within 24 hours.');
+    }
+
+    // Reveal animations on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < windowHeight - 100) {
+          el.classList.add('revealed');
+        }
+      });
+    }
+
+
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', checkReveal);
+    checkReveal();
+  </script>
+
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mobile-nav {
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-nav.active {
+      transform: translateX(0);
+    }
+  </style>
+
+</body>
+
+</html>
