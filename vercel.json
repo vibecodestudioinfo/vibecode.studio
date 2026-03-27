@@ -28,18 +28,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.vibecodestudio.in"
-        }
-      ],
-      "destination": "https://vibecodestudio.in/$1",
-      "permanent": true
-    }
   ]
 }
