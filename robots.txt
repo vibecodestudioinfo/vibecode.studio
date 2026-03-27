@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vibecode.studio/sitemap.xml
+Sitemap: https://vibecodestudio.in/sitemap.xml
