@@ -2,15 +2,17 @@
 // ── Custom Cursor ──
 const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursorRing');
+cursor.style.top = '0px';
+cursor.style.left = '0px';
+cursorRing.style.top = '0px';
+cursorRing.style.left = '0px';
 let mx = 0, my = 0, rx = 0, ry = 0;
 document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
 function animateCursor() {
   rx += (mx - rx) * 0.18;
   ry += (my - ry) * 0.18;
-  cursor.style.left = mx + 'px';
-  cursor.style.top = my + 'px';
-  cursorRing.style.left = rx + 'px';
-  cursorRing.style.top = ry + 'px';
+  cursor.style.transform = `translate3d(${mx}px, ${my}px, 0) translate(-50%, -50%)`;
+  cursorRing.style.transform = `translate3d(${rx}px, ${ry}px, 0) translate(-50%, -50%)`;
   requestAnimationFrame(animateCursor);
 }
 animateCursor();
@@ -325,4 +327,35 @@ document.querySelectorAll(".portfolio-card").forEach(card => {
   showImage(index);
   startAuto();
 
+});
+
+/* ===== HIDE URL HASH ON HASH ANCHOR CLICK & PAGE LOAD ===== */
+window.addEventListener("load", () => {
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname + window.location.search);
+  }
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    const targetId = this.getAttribute("href");
+    if (targetId === "#") return;
+
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      e.preventDefault();
+
+      // Close mobile nav if it's open
+      const mobileNav = document.getElementById("mobileNav");
+      if (mobileNav && mobileNav.classList.contains("open")) {
+        mobileNav.classList.remove("open");
+      }
+
+      const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth"
+      });
+    }
+  });
 });
